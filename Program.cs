@@ -19,18 +19,22 @@ namespace ArraysAndFunctions
          Console.WriteLine("---------------------------------------------------------------------------------------");
          Console.WriteLine("Введите целое число: ");
          int number = Convert.ToInt32(Console.ReadLine());
-
-         int Perenert(int number1)                // метод для переворачивания целого числа
+         // Метод для переворачивания целого числа
+         int Perenert(int number1)                
          {
             int i = number1;
             if (i < 0) number1 = -1 * number1;
             int number2 = 0;
             while (number1 > 0)
             {
-               int digit = number1 % 10;            // находим остаток - последнюю цифру исходного числа
-               number1 = number1 / 10;              // удаляем последнюю цифру исходного числа (уменьшаем разрядность)
-               number2 = number2 * 10;              // формируем новое  второе число (увеличиваем разрядность)
-               number2 = number2 + digit;           // добавляем цифру в разряд втрого числа
+               // Находим остаток - последнюю цифру исходного числа
+               int digit = number1 % 10;
+               // Удаляем последнюю цифру исходного числа (уменьшаем разрядность)
+               number1 = number1 / 10;  
+               // Формируем новое  второе число (увеличиваем разрядность)
+               number2 = number2 * 10; 
+               // Добавляем цифру в разряд втрого числа
+               number2 = number2 + digit;           
             }
             if (i < 0) return number2 = -1 * number2;
             return number2;
