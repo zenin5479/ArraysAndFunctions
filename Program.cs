@@ -53,6 +53,7 @@ namespace ArraysAndFunctions
                number1 = number2;
             }
          }
+
          Console.WriteLine("Введите порядковый номер цифры в числе");
          int n = Convert.ToInt32(Console.ReadLine());
 
@@ -87,6 +88,7 @@ namespace ArraysAndFunctions
                Console.WriteLine("цифра в числе под №" + n + " отсутствует");
             }
          }
+
          fun(number1);
 
 
