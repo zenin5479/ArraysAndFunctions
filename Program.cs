@@ -87,13 +87,13 @@ namespace ArraysAndFunctions
                digit2++;
             }
             // Проверка условия наличия цифры в знаке числа
-            if (n < digit2 + 1)                            
+            if (n < digit2 + 1)
             {
-               Console.WriteLine("цифра в числе " + number1 + " под №" + n + "   имеет заначениe:  " + array[n - 1]);
+               Console.WriteLine("Цифра в числе " + number1 + " под №" + n + " имеет заначениe: " + array[n - 1]);
             }
             else
             {
-               Console.WriteLine("цифра в числе под №" + n + " отсутствует");
+               Console.WriteLine("Цифра в числе под №" + n + " отсутствует");
             }
          }
 
