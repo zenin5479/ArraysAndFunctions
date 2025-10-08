@@ -30,13 +30,13 @@ namespace ArraysAndFunctions
                // Находим остаток - последнюю цифру исходного числа
                int digit = number1 % 10;
                // Удаляем последнюю цифру исходного числа (уменьшаем разрядность)
-               number1 = number1 / 10;  
+               number1 /= 10;  
                // Формируем новое  второе число (увеличиваем разрядность)
-               number2 = number2 * 10; 
+               number2 *= 10; 
                // Добавляем цифру в разряд втрого числа
-               number2 = number2 + digit;           
+               number2 += digit;           
             }
-            if (i < 0) return number2 = -1 * number2;
+            if (i < 0) return -1 * number2;
             return number2;
          }
 
