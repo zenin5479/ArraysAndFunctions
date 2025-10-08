@@ -40,7 +40,7 @@ namespace ArraysAndFunctions
             return number2;
          }
 
-         Console.WriteLine("числу: " + number + "  соответствует перевернутое число:  " + Perenert(number));
+         Console.WriteLine("Числу: " + number + " соответствует перевернутое число: " + Perenert(number));
 
          Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" программа,  которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. ");
