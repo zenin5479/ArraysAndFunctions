@@ -17,7 +17,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("---------------------------------------------------------------------------------------");
          Console.WriteLine("Программа, которая принимает на вход целое число и на выходе выводит перевёрнутое число");
          Console.WriteLine("---------------------------------------------------------------------------------------");
-         Console.WriteLine("Введите целое число: ");
+         Console.Write("Введите целое число: ");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод для переворачивания целого числа
          int Perenert(int number1)
@@ -46,19 +46,19 @@ namespace ArraysAndFunctions
          Console.WriteLine("Программа, которая выводит заданную цифру числа или сообщает, что такой цифры нет");
          Console.WriteLine("---------------------------------------------------------------------------------");
 
-         Console.WriteLine("Введите целое число: ");
+         Console.Write("Введите целое число: ");
          int number1 = Convert.ToInt32(Console.ReadLine());
          if (number1 == 0)
          {
             while (number1 == 0)
             {
-               Console.WriteLine("Введите целое число отличнное от 0: ");
+               Console.Write("Введите целое число отличнное от 0: ");
                int number2 = Convert.ToInt32(Console.ReadLine());
                number1 = number2;
             }
          }
 
-         Console.WriteLine("Введите порядковый номер цифры в числе: ");
+         Console.Write("Введите порядковый номер цифры в числе: ");
          int n = Convert.ToInt32(Console.ReadLine());
          // Метод выводит выводит заданную цифру числа или сообщает, что такой цифры нет
          void fun(int num)
