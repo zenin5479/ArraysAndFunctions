@@ -182,13 +182,9 @@ namespace ArraysAndFunctions
          }
 
          Vklad_Percent(vklad, mounth);
-
-
-
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine(" На вход подаются год, номер месяца и день рождения человека, Определить возраст человека на момент 1 февраля 2022 года.");
          Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------");
-
          int fun_month(int month3)                              // метод проверки правильности ввода месяца
          {
             while (month3 > 12 | month3 <= 0)
@@ -198,6 +194,7 @@ namespace ArraysAndFunctions
             }
             return month3;
          }
+
          int fun_day(int day3)                                  // метод проверки правильности ввода дня
          {
             while (day3 > 31 | day3 <= 0)
@@ -240,7 +237,6 @@ namespace ArraysAndFunctions
          }
 
          fun_age(year1, year2, month1, month2, day1, day2);
-
       }
    }
 }
