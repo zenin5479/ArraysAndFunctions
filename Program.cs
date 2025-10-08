@@ -62,7 +62,7 @@ namespace ArraysAndFunctions
          Console.Write("Введите порядковый номер цифры в числе: ");
          int n = Convert.ToInt32(Console.ReadLine());
          // Метод выводит выводит заданную цифру числа или сообщает, что такой цифры нет
-         void fun(int num)
+         void Fun(int num)
          {
             int num1 = Math.Abs(num);
             int digit1 = 0;
@@ -98,7 +98,7 @@ namespace ArraysAndFunctions
             }
          }
 
-         fun(number1);
+         Fun(number1);
 
          Console.WriteLine(" --------------------------------------------------------------------------------------------- -----------------------");
          Console.WriteLine(" программа, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным. ");
@@ -106,7 +106,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите порядковый номер  недели от 1 до 7 ");
          int number3 = Convert.ToInt32(Console.ReadLine());
          string ss;
-         string HoliDay_YN(int num6)                  // метод определения является день недели ли выходным или нет
+         string HoliDayYn(int num6)                  // метод определения является день недели ли выходным или нет
          {
             if ((num6 == 6) | (num6 == 7))
             {
@@ -119,40 +119,9 @@ namespace ArraysAndFunctions
             return ss;
          }
 
-         string s = "";
-         string Week(int num5)                      // метод определения дня недели по числу
-         {
-            switch (num5)
-            {
-               case 1:
-                  s = "понедельник"; return s;
-                  break;
-               case 2:
-                  s = "вторник"; return s;
-                  break;
-               case 3:
-                  s = "среда"; return s;
-                  break;
-               case 4:
-                  s = "четверго"; return s;
-                  break;
-               case 5:
-                  s = "впятница"; return s;
-                  break;
-               case 6:
-                  s = "суббота"; return s;
-                  break;
-               case 7:
-                  s = "воскресенье"; return s;
-                  break;
-               default:
-                  s = "ввели неправильное число"; return s;
-                  break;
-            }
-            return s;
-         }
+         string s;
 
-         Console.WriteLine(number3 + " - " + Week(number3) + " " + HoliDay_YN(number3));
+         Console.WriteLine(number3 + " - " + Week(number3) + " " + HoliDayYn(number3));
 
          // ДОПОЛНИТЕЛЬНЫЕ ЗАДАЧИ
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
@@ -161,13 +130,8 @@ namespace ArraysAndFunctions
          int a = Convert.ToInt32(Console.ReadLine());
          int b = Convert.ToInt32(Console.ReadLine());
          int c = Convert.ToInt32(Console.ReadLine());
-         void isosceles_YN(int a1, int b1, int c1)
-         {
-            if ((a == b) | (a == c) | (b == c)) Console.WriteLine("треугольник равнобедренный");
-            else Console.WriteLine("треугольник неравнобедренный");
-         }
 
-         isosceles_YN(a, b, c);
+         IsoscelesYn(a, b, c);
 
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine(" Иван в январе года открыл счет в банке, вложив 1000 руб. Через каждый месяц размер вклада увеличивается на 1.5% от имеющейся суммы. Определить размер депозита через n месяцев.");
@@ -175,7 +139,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите кол. месяцев");
          int mounth = Convert.ToInt32(Console.ReadLine());
          double vklad = 1000;
-         void Vklad_Percent(double vklad1, int mounth1)                                     // метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
+         void VkladPercent(double vklad1, int mounth1)                                     // метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
          {
             int ind = 1;
             double sum = vklad1;
@@ -190,11 +154,11 @@ namespace ArraysAndFunctions
             Console.WriteLine("Вклад с учетом процентов = " + Math.Round(vklad1, 2) + "руб.");
          }
 
-         Vklad_Percent(vklad, mounth);
+         VkladPercent(vklad, mounth);
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine(" На вход подаются год, номер месяца и день рождения человека, Определить возраст человека на момент 1 февраля 2022 года.");
          Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------");
-         int fun_month(int month3)                              // метод проверки правильности ввода месяца
+         int FunMonth(int month3)                              // метод проверки правильности ввода месяца
          {
             while (month3 > 12 | month3 <= 0)
             {
@@ -204,7 +168,7 @@ namespace ArraysAndFunctions
             return month3;
          }
 
-         int fun_day(int day3)                                  // метод проверки правильности ввода дня
+         int FunDay(int day3)                                  // метод проверки правильности ввода дня
          {
             while (day3 > 31 | day3 <= 0)
             {
@@ -219,22 +183,22 @@ namespace ArraysAndFunctions
          int year1 = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("месяц");
          int month1 = Convert.ToInt32(Console.ReadLine());
-         month1 = fun_month(month1);
+         month1 = FunMonth(month1);
          Console.WriteLine("день");
          int day1 = Convert.ToInt32(Console.ReadLine());
-         day1 = fun_day(day1);
+         day1 = FunDay(day1);
 
          Console.WriteLine("Введите текущую дату");
          Console.WriteLine("год");
          int year2 = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("месяц");
          int month2 = Convert.ToInt32(Console.ReadLine());
-         month2 = fun_month(month2);
+         month2 = FunMonth(month2);
          Console.WriteLine("день");
          int day2 = Convert.ToInt32(Console.ReadLine());
-         day2 = fun_day(day2);
+         day2 = FunDay(day2);
 
-         void fun_age(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)          // метод расчета возраста
+         void FunAge(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)          // метод расчета возраста
          {
             int age = 0;
             if (year_2 > year_1)
@@ -245,7 +209,62 @@ namespace ArraysAndFunctions
             Console.WriteLine("возраст (кол полных лет) = " + age);
          }
 
-         fun_age(year1, year2, month1, month2, day1, day2);
+         FunAge(year1, year2, month1, month2, day1, day2);
+         return;
+
+         string Week(int num5)                      // метод определения дня недели по числу
+         {
+            if (num5 == 1)
+            {
+               s = "понедельник";
+               return s;
+            }
+
+            if (num5 == 2)
+            {
+               s = "вторник";
+               return s;
+            }
+
+            if (num5 == 3)
+            {
+               s = "среда";
+               return s;
+            }
+
+            if (num5 == 4)
+            {
+               s = "четверг";
+               return s;
+            }
+
+            if (num5 == 5)
+            {
+               s = "пятница";
+               return s;
+            }
+
+            if (num5 == 6)
+            {
+               s = "суббота";
+               return s;
+            }
+
+            if (num5 == 7)
+            {
+               s = "воскресенье";
+               return s;
+            }
+
+            s = "ввели неправильное число";
+            return s;
+         }
+
+         void IsoscelesYn(int a1, int b1, int c1)
+         {
+            if ((a == b) | (a == c) | (b == c)) Console.WriteLine("треугольник равнобедренный");
+            else Console.WriteLine("треугольник неравнобедренный");
+         }
       }
    }
 }
