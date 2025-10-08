@@ -20,7 +20,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите целое число: ");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод для переворачивания целого числа
-         int Perenert(int number1)                
+         int Perenert(int number1)
          {
             int i = number1;
             if (i < 0) number1 = -1 * number1;
@@ -30,11 +30,11 @@ namespace ArraysAndFunctions
                // Находим остаток - последнюю цифру исходного числа
                int digit = number1 % 10;
                // Удаляем последнюю цифру исходного числа (уменьшаем разрядность)
-               number1 /= 10;  
+               number1 /= 10;
                // Формируем новое  второе число (увеличиваем разрядность)
-               number2 *= 10; 
+               number2 *= 10;
                // Добавляем цифру в разряд втрого числа
-               number2 += digit;           
+               number2 += digit;
             }
             if (i < 0) return -1 * number2;
             return number2;
@@ -42,48 +42,52 @@ namespace ArraysAndFunctions
 
          Console.WriteLine("Числу: " + number + " соответствует перевернутое число: " + Perenert(number));
 
-         Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
-         Console.WriteLine(" программа,  которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. ");
-         Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
+         Console.WriteLine("---------------------------------------------------------------------------------");
+         Console.WriteLine("Программа, которая выводит заданную цифру числа или сообщает, что такой цифры нет");
+         Console.WriteLine("---------------------------------------------------------------------------------");
 
-         Console.WriteLine("Введите целое число");
+         Console.WriteLine("Введите целое число: ");
          int number1 = Convert.ToInt32(Console.ReadLine());
          if (number1 == 0)
          {
             while (number1 == 0)
             {
-               Console.WriteLine("Введите целое число отличнное от 0");
+               Console.WriteLine("Введите целое число отличнное от 0: ");
                int number2 = Convert.ToInt32(Console.ReadLine());
                number1 = number2;
             }
          }
 
-         Console.WriteLine("Введите порядковый номер цифры в числе");
+         Console.WriteLine("Введите порядковый номер цифры в числе: ");
          int n = Convert.ToInt32(Console.ReadLine());
-
-         void fun(int num)                         // метод выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+         // Метод выводит выводит заданную цифру числа или сообщает, что такой цифры нет
+         void fun(int num)
          {
             int num1 = Math.Abs(num);
             int digit1 = 0;
-            while (num1 > 0)                          // расчет кол разрядов в числе
+            // Расчет количества разрядов в числе
+            while (num1 > 0)
             {
-               num1 = num1 / 10;
+               num1 /= 10;
                digit1++;
             }
             int[] array = new int[digit1];
 
-            int numB = Math.Abs(Perenert(num));    //  метод переворачивает число
+            // Метод переворачивает число
+            int numB = Math.Abs(Perenert(num));
             int s = numB;
             int digit2 = 0;
-            while (numB > 0)                           // число переводится в массив
+            // Число переводится в массив
+            while (numB > 0)
             {
-               numB = numB / 10;
+               numB /= 10;
                int numA = s - numB * 10;
                array[digit2] = numA;
-               s = s / 10;
+               s /= 10;
                digit2++;
             }
-            if (n < digit2 + 1)                            // проверка условия наличия цифры в знаке числа
+            // Проверка условия наличия цифры в знаке числа
+            if (n < digit2 + 1)                            
             {
                Console.WriteLine("цифра в числе " + number1 + " под №" + n + "   имеет заначениe:  " + array[n - 1]);
             }
