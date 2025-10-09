@@ -211,15 +211,15 @@ namespace ArraysAndFunctions
 
          VkladPercent(vklad, mounth);
 
-         Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
+         Console.WriteLine("---------------------------------------------------------");
          Console.WriteLine("Определить возраст человека на момент 1 февраля 2022 года");
-         Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------");
+         Console.WriteLine("---------------------------------------------------------");
          // Метод проверки правильности ввода месяца
          int FunMonth(int month3)
          {
             while (month3 > 12 | month3 <= 0)
             {
-               Console.WriteLine("Введите корректный месяц");
+               Console.WriteLine("Введите корректный месяц: ");
                month3 = Convert.ToInt32(Console.ReadLine());
             }
             return month3;
@@ -230,29 +230,29 @@ namespace ArraysAndFunctions
          {
             while (day3 > 31 | day3 <= 0)
             {
-               Console.WriteLine("Введите корректную дату");
+               Console.WriteLine("Введите корректную дату: ");
                day3 = Convert.ToInt32(Console.ReadLine());
             }
             return day3;
          }
 
-         Console.WriteLine("Введите дату рождения");
-         Console.WriteLine("год");
+         Console.WriteLine("Введите дату рождения: ");
+         Console.WriteLine("Год: ");
          int year1 = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("месяц");
+         Console.WriteLine("Месяц: ");
          int month1 = Convert.ToInt32(Console.ReadLine());
          month1 = FunMonth(month1);
-         Console.WriteLine("день");
+         Console.WriteLine("День: ");
          int day1 = Convert.ToInt32(Console.ReadLine());
          day1 = FunDay(day1);
 
-         Console.WriteLine("Введите текущую дату");
-         Console.WriteLine("год");
+         Console.WriteLine("Введите текущую дату: ");
+         Console.WriteLine("Год: ");
          int year2 = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("месяц");
+         Console.WriteLine("Месяц: ");
          int month2 = Convert.ToInt32(Console.ReadLine());
          month2 = FunMonth(month2);
-         Console.WriteLine("день");
+         Console.WriteLine("День: ");
          int day2 = Convert.ToInt32(Console.ReadLine());
          day2 = FunDay(day2);
 
