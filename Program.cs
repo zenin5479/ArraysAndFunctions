@@ -107,7 +107,7 @@ namespace ArraysAndFunctions
          int number3 = Convert.ToInt32(Console.ReadLine());
          string ss;
          // Метод определения является день недели ли выходным или нет
-         string HoliDayYn(int num6)                  
+         string HoliDay(int num6)                  
          {
             if ((num6 == 6) | (num6 == 7))
             {
@@ -121,7 +121,7 @@ namespace ArraysAndFunctions
          }
 
          string s;
-         Console.WriteLine(number3 + " - " + Week(number3) + " " + HoliDayYn(number3));
+         Console.WriteLine(number3 + " - " + Week(number3) + " " + HoliDay(number3));
 
          // ДОПОЛНИТЕЛЬНЫЕ ЗАДАЧИ
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
