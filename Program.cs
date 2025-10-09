@@ -106,7 +106,7 @@ namespace ArraysAndFunctions
          int number3 = Convert.ToInt32(Console.ReadLine());
          string ss;
          // Метод определения является день недели ли выходным или нет
-         string HoliDay(int num6)
+         string Weekend(int num6)
          {
             if ((num6 == 6) | (num6 == 7))
             {
@@ -170,25 +170,32 @@ namespace ArraysAndFunctions
             return s;
          }
 
-         Console.WriteLine(number3 + " - " + Week(number3) + HoliDay(number3));
+         Console.WriteLine(number3 + " - " + Week(number3) + Weekend(number3));
 
          // Дополнительные задачи
          Console.WriteLine("------------------------------------------------------------------------------------------");
          Console.WriteLine("Программа, которая определяет, является ли треугольник со сторонами a, b, c равнобедренным");
          Console.WriteLine("------------------------------------------------------------------------------------------");
-         //
+         Console.Write("Введите сторону a треугольника: ");
          int a = Convert.ToInt32(Console.ReadLine());
-         //
+         Console.Write("Введите сторону b треугольника: ");
          int b = Convert.ToInt32(Console.ReadLine());
-         //
+         Console.Write("Введите сторону c треугольника: ");
          int c = Convert.ToInt32(Console.ReadLine());
 
-         void IsoscelesYn(int a1, int b1, int c1)
+         void Isosceles(int a1, int b1, int c1)
          {
-            if ((a1 == b1) | (a1 == c1) | (b1 == c1)) Console.WriteLine("Треугольник равнобедренный");
-            else Console.WriteLine("Треугольник неравнобедренный");
+            if ((a1 == b1) | (a1 == c1) | (b1 == c1))
+            {
+               Console.WriteLine("Треугольник равнобедренный");
+            }
+            else
+            {
+               Console.WriteLine("Треугольник неравнобедренный");
+            }
          }
-         IsoscelesYn(a, b, c);
+
+         Isosceles(a, b, c);
 
          Console.WriteLine("---------------------------------------------------------");
          Console.WriteLine("Определить возраст человека на момент 1 февраля 2022 года");
