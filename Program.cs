@@ -98,8 +98,6 @@ namespace ArraysAndFunctions
             }
          }
 
-         Fun(number1);
-
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------------");
          Console.WriteLine("Программа, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным");
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------------");
@@ -107,7 +105,7 @@ namespace ArraysAndFunctions
          int number3 = Convert.ToInt32(Console.ReadLine());
          string ss;
          // Метод определения является день недели ли выходным или нет
-         string HoliDay(int num6)                  
+         string HoliDay(int num6)
          {
             if ((num6 == 6) | (num6 == 7))
             {
@@ -130,8 +128,14 @@ namespace ArraysAndFunctions
          int a = Convert.ToInt32(Console.ReadLine());
          int b = Convert.ToInt32(Console.ReadLine());
          int c = Convert.ToInt32(Console.ReadLine());
+         //IsoscelesYn(a, b, c);
+         void IsoscelesYn(int a, int b, int c)
+         {
+            if ((a == b) | (a == c) | (b == c)) Console.WriteLine("треугольник равнобедренный");
+            else Console.WriteLine("треугольник неравнобедренный");
+         }
 
-         IsoscelesYn(a, b, c);
+
 
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine(" Иван в январе года открыл счет в банке, вложив 1000 руб. Через каждый месяц размер вклада увеличивается на 1.5% от имеющейся суммы. Определить размер депозита через n месяцев.");
@@ -260,11 +264,7 @@ namespace ArraysAndFunctions
             return s;
          }
 
-         void IsoscelesYn(int a1, int b1, int c1)
-         {
-            if ((a == b) | (a == c) | (b == c)) Console.WriteLine("треугольник равнобедренный");
-            else Console.WriteLine("треугольник неравнобедренный");
-         }
+
       }
    }
 }
