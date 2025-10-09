@@ -192,7 +192,7 @@ namespace ArraysAndFunctions
                            "Через каждый месяц размер вклада увеличивается на 1.5% от имеющейся суммы\n" +
                            "Определить размер депозита через n месяцев\n");
          Console.WriteLine(" --------------------------------------------------------------------------");
-         Console.WriteLine("Введите количество месяцев");
+         Console.WriteLine("Введите количество месяцев: ");
          int mounth = Convert.ToInt32(Console.ReadLine());
          double vklad = 1000;
          // Метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
@@ -207,8 +207,8 @@ namespace ArraysAndFunctions
                sum = vklad1;
                ind = ind + 1;
             }
-            Console.WriteLine("Процент ежемесячный =  " + percent * 100 + "%" + ", кол. месяцев по вкладу = " + mounth1);
-            Console.WriteLine("Вклад с учетом процентов = " + Math.Round(vklad1, 2) + "руб.");
+            Console.WriteLine("Процент ежемесячный =  " + percent * 100 + "%" + ", количество месяцев по вкладу = " + mounth1);
+            Console.WriteLine("Вклад с учетом процентов = " + Math.Round(vklad1, 2) + "рублей");
          }
 
          VkladPercent(vklad, mounth);
