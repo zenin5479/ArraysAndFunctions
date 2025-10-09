@@ -265,7 +265,7 @@ namespace ArraysAndFunctions
                   age = year_2 - year_1 - 1;
                else
                   age = year_2 - year_1;
-            Console.WriteLine("возраст (кол полных лет) = " + age);
+            Console.WriteLine("Возраст (количество полных лет) = " + age);
          }
 
          FunAge(year1, year2, month1, month2, day1, day2);
