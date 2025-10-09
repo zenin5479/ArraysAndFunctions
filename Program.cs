@@ -201,7 +201,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Определить возраст человека на момент 1 февраля 2022 года");
          Console.WriteLine("---------------------------------------------------------");
          // Метод проверки правильности ввода месяца
-         int FunMonth(int month3)
+         int inputMonth(int month3)
          {
             while (month3 > 12 | month3 <= 0)
             {
@@ -212,7 +212,7 @@ namespace ArraysAndFunctions
          }
 
          // Метод проверки правильности ввода дня
-         int FunDay(int day3)
+         int inputDay(int day3)
          {
             while (day3 > 31 | day3 <= 0)
             {
@@ -227,20 +227,20 @@ namespace ArraysAndFunctions
          int year1 = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Месяц: ");
          int month1 = Convert.ToInt32(Console.ReadLine());
-         month1 = FunMonth(month1);
+         month1 = inputMonth(month1);
          Console.WriteLine("День: ");
          int day1 = Convert.ToInt32(Console.ReadLine());
-         day1 = FunDay(day1);
+         day1 = inputDay(day1);
 
          Console.WriteLine("Введите текущую дату: ");
          Console.WriteLine("Год: ");
          int year2 = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Месяц: ");
          int month2 = Convert.ToInt32(Console.ReadLine());
-         month2 = FunMonth(month2);
+         month2 = inputMonth(month2);
          Console.WriteLine("День: ");
          int day2 = Convert.ToInt32(Console.ReadLine());
-         day2 = FunDay(day2);
+         day2 = inputDay(day2);
 
          // Метод расчета возраста
          void FunAge(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)
