@@ -201,7 +201,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Определить возраст человека на момент 1 февраля 2022 года");
          Console.WriteLine("---------------------------------------------------------");
          // Метод проверки правильности ввода месяца
-         int inputMonth(int month3)
+         int InputMonth(int month3)
          {
             while (month3 > 12 | month3 <= 0)
             {
@@ -212,7 +212,7 @@ namespace ArraysAndFunctions
          }
 
          // Метод проверки правильности ввода дня
-         int inputDay(int day3)
+         int InputDay(int day3)
          {
             while (day3 > 31 | day3 <= 0)
             {
@@ -222,28 +222,28 @@ namespace ArraysAndFunctions
             return day3;
          }
 
-         Console.WriteLine("Введите дату рождения: ");
-         Console.WriteLine("Год: ");
+         Console.Write("Введите дату рождения: ");
+         Console.Write("Год: ");
          int year1 = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Месяц: ");
+         Console.Write("Месяц: ");
          int month1 = Convert.ToInt32(Console.ReadLine());
-         month1 = inputMonth(month1);
-         Console.WriteLine("День: ");
+         month1 = InputMonth(month1);
+         Console.Write("День: ");
          int day1 = Convert.ToInt32(Console.ReadLine());
-         day1 = inputDay(day1);
+         day1 = InputDay(day1);
 
-         Console.WriteLine("Введите текущую дату: ");
-         Console.WriteLine("Год: ");
+         Console.Write("Введите текущую дату: ");
+         Console.Write("Год: ");
          int year2 = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Месяц: ");
+         Console.Write("Месяц: ");
          int month2 = Convert.ToInt32(Console.ReadLine());
-         month2 = inputMonth(month2);
-         Console.WriteLine("День: ");
+         month2 = InputMonth(month2);
+         Console.Write("День: ");
          int day2 = Convert.ToInt32(Console.ReadLine());
-         day2 = inputDay(day2);
+         day2 = InputDay(day2);
 
          // Метод расчета возраста
-         void FunAge(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)
+         void InputAge(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)
          {
             int age = 0;
             if (year_2 > year_1)
@@ -254,7 +254,7 @@ namespace ArraysAndFunctions
             Console.WriteLine("Возраст (количество полных лет) = " + age);
          }
 
-         FunAge(year1, year2, month1, month2, day1, day2);
+         InputAge(year1, year2, month1, month2, day1, day2);
 
          Console.WriteLine("------------------------------------------");
          Console.WriteLine("Определить размер депозита через n месяцев");
