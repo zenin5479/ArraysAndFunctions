@@ -179,14 +179,13 @@ namespace ArraysAndFunctions
          int a = Convert.ToInt32(Console.ReadLine());
          int b = Convert.ToInt32(Console.ReadLine());
          int c = Convert.ToInt32(Console.ReadLine());
-         
-         void IsoscelesYn(int a, int b, int c)
+
+         void IsoscelesYn(int a1, int b1, int c1)
          {
-            if ((a == b) | (a == c) | (b == c)) Console.WriteLine("треугольник равнобедренный");
+            if ((a1 == b1) | (a1 == c1) | (b1 == c1)) Console.WriteLine("треугольник равнобедренный");
             else Console.WriteLine("треугольник неравнобедренный");
          }
          IsoscelesYn(a, b, c);
-
 
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine(" Иван в январе года открыл счет в банке, вложив 1000 руб. Через каждый месяц размер вклада увеличивается на 1.5% от имеющейся суммы. Определить размер депозита через n месяцев.");
@@ -194,7 +193,8 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите кол. месяцев");
          int mounth = Convert.ToInt32(Console.ReadLine());
          double vklad = 1000;
-         void VkladPercent(double vklad1, int mounth1)                                     // метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
+         // Метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
+         void VkladPercent(double vklad1, int mounth1)
          {
             int ind = 1;
             double sum = vklad1;
@@ -210,6 +210,7 @@ namespace ArraysAndFunctions
          }
 
          VkladPercent(vklad, mounth);
+
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine(" На вход подаются год, номер месяца и день рождения человека, Определить возраст человека на момент 1 февраля 2022 года.");
          Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------");
@@ -265,11 +266,6 @@ namespace ArraysAndFunctions
          }
 
          FunAge(year1, year2, month1, month2, day1, day2);
-         return;
-
-
-
-
       }
    }
 }
