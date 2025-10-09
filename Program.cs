@@ -187,11 +187,9 @@ namespace ArraysAndFunctions
          }
          IsoscelesYn(a, b, c);
 
-         Console.WriteLine("---------------------------------------------------------------------------");
-         Console.WriteLine("Иван в январе года открыл счет в банке, вложив 1000 рублей\n" +
-                           "Через каждый месяц размер вклада увеличивается на 1.5% от имеющейся суммы\n" +
-                           "Определить размер депозита через n месяцев\n");
-         Console.WriteLine(" --------------------------------------------------------------------------");
+         Console.WriteLine("--------------------------------------------");
+         Console.WriteLine("Определить размер депозита через n месяцев\n");
+         Console.WriteLine(" -------------------------------------------");
          Console.WriteLine("Введите количество месяцев: ");
          int mounth = Convert.ToInt32(Console.ReadLine());
          double vklad = 1000;
@@ -207,8 +205,8 @@ namespace ArraysAndFunctions
                sum = vklad1;
                ind = ind + 1;
             }
-            Console.WriteLine("Процент ежемесячный =  " + percent * 100 + "%" + ", количество месяцев по вкладу = " + mounth1);
-            Console.WriteLine("Вклад с учетом процентов = " + Math.Round(vklad1, 2) + "рублей");
+            Console.WriteLine("Процент ежемесячный = " + percent * 100 + "%" + ", количество месяцев по вкладу = " + mounth1);
+            Console.WriteLine("Вклад с учетом процентов = " + Math.Round(vklad1, 2) + " рублей");
          }
 
          VkladPercent(vklad, mounth);
