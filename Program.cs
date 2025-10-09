@@ -187,8 +187,6 @@ namespace ArraysAndFunctions
          }
          IsoscelesYn(a, b, c);
 
-        
-
          Console.WriteLine("---------------------------------------------------------");
          Console.WriteLine("Определить возраст человека на момент 1 февраля 2022 года");
          Console.WriteLine("---------------------------------------------------------");
@@ -234,8 +232,8 @@ namespace ArraysAndFunctions
          int day2 = Convert.ToInt32(Console.ReadLine());
          day2 = FunDay(day2);
 
-          // Метод расчета возраста
-         void FunAge(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)         
+         // Метод расчета возраста
+         void FunAge(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)
          {
             int age = 0;
             if (year_2 > year_1)
@@ -247,10 +245,10 @@ namespace ArraysAndFunctions
          }
 
          FunAge(year1, year2, month1, month2, day1, day2);
-         
-         Console.WriteLine("--------------------------------------------");
-         Console.WriteLine("Определить размер депозита через n месяцев\n");
-         Console.WriteLine(" -------------------------------------------");
+
+         Console.WriteLine("------------------------------------------");
+         Console.WriteLine("Определить размер депозита через n месяцев");
+         Console.WriteLine(" -----------------------------------------");
          Console.WriteLine("Введите количество месяцев: ");
          int mounth = Convert.ToInt32(Console.ReadLine());
          double vklad = 1000;
