@@ -214,7 +214,8 @@ namespace ArraysAndFunctions
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
          Console.WriteLine(" На вход подаются год, номер месяца и день рождения человека, Определить возраст человека на момент 1 февраля 2022 года.");
          Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------");
-         int FunMonth(int month3)                              // метод проверки правильности ввода месяца
+         // Метод проверки правильности ввода месяца
+         int FunMonth(int month3)
          {
             while (month3 > 12 | month3 <= 0)
             {
@@ -224,7 +225,8 @@ namespace ArraysAndFunctions
             return month3;
          }
 
-         int FunDay(int day3)                                  // метод проверки правильности ввода дня
+         // Метод проверки правильности ввода дня
+         int FunDay(int day3)
          {
             while (day3 > 31 | day3 <= 0)
             {
@@ -254,7 +256,8 @@ namespace ArraysAndFunctions
          int day2 = Convert.ToInt32(Console.ReadLine());
          day2 = FunDay(day2);
 
-         void FunAge(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)          // метод расчета возраста
+          // Метод расчета возраста
+         void FunAge(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)         
          {
             int age = 0;
             if (year_2 > year_1)
