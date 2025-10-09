@@ -121,51 +121,52 @@ namespace ArraysAndFunctions
 
          string s;
 
-         string Week(int num5)                      // метод определения дня недели по числу
+         // Метод определения дня недели по числу
+         string Week(int num5)
          {
             if (num5 == 1)
             {
-               s = "понедельник";
+               s = "Понедельник";
                return s;
             }
 
             if (num5 == 2)
             {
-               s = "вторник";
+               s = "Вторник";
                return s;
             }
 
             if (num5 == 3)
             {
-               s = "среда";
+               s = "Среда";
                return s;
             }
 
             if (num5 == 4)
             {
-               s = "четверг";
+               s = "Четверг";
                return s;
             }
 
             if (num5 == 5)
             {
-               s = "пятница";
+               s = "Пятница";
                return s;
             }
 
             if (num5 == 6)
             {
-               s = "суббота";
+               s = "Суббота";
                return s;
             }
 
             if (num5 == 7)
             {
-               s = "воскресенье";
+               s = "Воскресенье";
                return s;
             }
 
-            s = "ввели неправильное число";
+            s = "Ввели неправильное число";
             return s;
          }
 
@@ -178,13 +179,13 @@ namespace ArraysAndFunctions
          int a = Convert.ToInt32(Console.ReadLine());
          int b = Convert.ToInt32(Console.ReadLine());
          int c = Convert.ToInt32(Console.ReadLine());
-         //IsoscelesYn(a, b, c);
+         
          void IsoscelesYn(int a, int b, int c)
          {
             if ((a == b) | (a == c) | (b == c)) Console.WriteLine("треугольник равнобедренный");
             else Console.WriteLine("треугольник неравнобедренный");
          }
-
+         IsoscelesYn(a, b, c);
 
 
          Console.WriteLine(" --------------------------------------------------------------------------------------------------------------------");
