@@ -170,14 +170,17 @@ namespace ArraysAndFunctions
             return s;
          }
 
-         Console.WriteLine(number3 + " - " + Week(number3) + " " + HoliDay(number3));
+         Console.WriteLine(number3 + " - " + Week(number3) + HoliDay(number3));
 
          // Дополнительные задачи
          Console.WriteLine("------------------------------------------------------------------------------------------");
          Console.WriteLine("Программа, которая определяет, является ли треугольник со сторонами a, b, c равнобедренным");
          Console.WriteLine("------------------------------------------------------------------------------------------");
+         //
          int a = Convert.ToInt32(Console.ReadLine());
+         //
          int b = Convert.ToInt32(Console.ReadLine());
+         //
          int c = Convert.ToInt32(Console.ReadLine());
 
          void IsoscelesYn(int a1, int b1, int c1)
