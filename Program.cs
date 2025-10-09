@@ -97,6 +97,7 @@ namespace ArraysAndFunctions
                Console.WriteLine("Цифра в числе под №" + n + " отсутствует");
             }
          }
+         Fun(number1);
 
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------------");
          Console.WriteLine("Программа, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным");
@@ -119,6 +120,55 @@ namespace ArraysAndFunctions
          }
 
          string s;
+
+         string Week(int num5)                      // метод определения дня недели по числу
+         {
+            if (num5 == 1)
+            {
+               s = "понедельник";
+               return s;
+            }
+
+            if (num5 == 2)
+            {
+               s = "вторник";
+               return s;
+            }
+
+            if (num5 == 3)
+            {
+               s = "среда";
+               return s;
+            }
+
+            if (num5 == 4)
+            {
+               s = "четверг";
+               return s;
+            }
+
+            if (num5 == 5)
+            {
+               s = "пятница";
+               return s;
+            }
+
+            if (num5 == 6)
+            {
+               s = "суббота";
+               return s;
+            }
+
+            if (num5 == 7)
+            {
+               s = "воскресенье";
+               return s;
+            }
+
+            s = "ввели неправильное число";
+            return s;
+         }
+
          Console.WriteLine(number3 + " - " + Week(number3) + " " + HoliDay(number3));
 
          // ДОПОЛНИТЕЛЬНЫЕ ЗАДАЧИ
@@ -216,53 +266,7 @@ namespace ArraysAndFunctions
          FunAge(year1, year2, month1, month2, day1, day2);
          return;
 
-         string Week(int num5)                      // метод определения дня недели по числу
-         {
-            if (num5 == 1)
-            {
-               s = "понедельник";
-               return s;
-            }
 
-            if (num5 == 2)
-            {
-               s = "вторник";
-               return s;
-            }
-
-            if (num5 == 3)
-            {
-               s = "среда";
-               return s;
-            }
-
-            if (num5 == 4)
-            {
-               s = "четверг";
-               return s;
-            }
-
-            if (num5 == 5)
-            {
-               s = "пятница";
-               return s;
-            }
-
-            if (num5 == 6)
-            {
-               s = "суббота";
-               return s;
-            }
-
-            if (num5 == 7)
-            {
-               s = "воскресенье";
-               return s;
-            }
-
-            s = "ввели неправильное число";
-            return s;
-         }
 
 
       }
