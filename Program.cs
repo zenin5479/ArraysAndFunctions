@@ -187,29 +187,7 @@ namespace ArraysAndFunctions
          }
          IsoscelesYn(a, b, c);
 
-         Console.WriteLine("--------------------------------------------");
-         Console.WriteLine("Определить размер депозита через n месяцев\n");
-         Console.WriteLine(" -------------------------------------------");
-         Console.WriteLine("Введите количество месяцев: ");
-         int mounth = Convert.ToInt32(Console.ReadLine());
-         double vklad = 1000;
-         // Метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
-         void VkladPercent(double vklad1, int mounth1)
-         {
-            int ind = 1;
-            double sum = vklad1;
-            double percent = 1.5 / 100;
-            while (ind <= mounth1)
-            {
-               vklad1 = sum * percent + sum;
-               sum = vklad1;
-               ind = ind + 1;
-            }
-            Console.WriteLine("Процент ежемесячный = " + percent * 100 + "%" + ", количество месяцев по вкладу = " + mounth1);
-            Console.WriteLine("Вклад с учетом процентов = " + Math.Round(vklad1, 2) + " рублей");
-         }
-
-         VkladPercent(vklad, mounth);
+        
 
          Console.WriteLine("---------------------------------------------------------");
          Console.WriteLine("Определить возраст человека на момент 1 февраля 2022 года");
@@ -269,6 +247,30 @@ namespace ArraysAndFunctions
          }
 
          FunAge(year1, year2, month1, month2, day1, day2);
+         
+         Console.WriteLine("--------------------------------------------");
+         Console.WriteLine("Определить размер депозита через n месяцев\n");
+         Console.WriteLine(" -------------------------------------------");
+         Console.WriteLine("Введите количество месяцев: ");
+         int mounth = Convert.ToInt32(Console.ReadLine());
+         double vklad = 1000;
+         // Метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
+         void VkladPercent(double vklad1, int mounth1)
+         {
+            int ind = 1;
+            double sum = vklad1;
+            double percent = 1.5 / 100;
+            while (ind <= mounth1)
+            {
+               vklad1 = sum * percent + sum;
+               sum = vklad1;
+               ind = ind + 1;
+            }
+            Console.WriteLine("Процент ежемесячный = " + percent * 100 + "%" + ", количество месяцев по вкладу = " + mounth1);
+            Console.WriteLine("Вклад с учетом процентов = " + Math.Round(vklad1, 2) + " рублей");
+         }
+
+         VkladPercent(vklad, mounth);
       }
    }
 }
