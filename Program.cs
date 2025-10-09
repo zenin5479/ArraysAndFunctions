@@ -106,7 +106,8 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите порядковый номер недели от 1 до 7: ");
          int number3 = Convert.ToInt32(Console.ReadLine());
          string ss;
-         string HoliDayYn(int num6)                  // метод определения является день недели ли выходным или нет
+         // Метод определения является день недели ли выходным или нет
+         string HoliDayYn(int num6)                  
          {
             if ((num6 == 6) | (num6 == 7))
             {
@@ -120,7 +121,6 @@ namespace ArraysAndFunctions
          }
 
          string s;
-
          Console.WriteLine(number3 + " - " + Week(number3) + " " + HoliDayYn(number3));
 
          // ДОПОЛНИТЕЛЬНЫЕ ЗАДАЧИ
