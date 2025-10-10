@@ -285,7 +285,8 @@ namespace ArraysAndFunctions
          Console.Write("Введите натуральное число с разными цифрами: ");
          int numbe = int.Parse(Console.ReadLine());
          char[] digits = numbe.ToString().ToCharArray();
-         int maxIndex = 0, minIndex = 0;
+         int maxIndex = 0;
+         int minIndex = 0;
          for (int i = 1; i < digits.Length; i++)
          {
             if (digits[i] > digits[maxIndex])
