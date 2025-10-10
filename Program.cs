@@ -307,6 +307,7 @@ namespace ArraysAndFunctions
          else if (minIndex < maxIndex)
             Console.WriteLine($"Минимальная цифра {minDigit} левее максимальной {maxDigit}");
 
+
          Console.ReadKey();
       }
    }
