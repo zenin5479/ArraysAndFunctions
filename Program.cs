@@ -201,60 +201,60 @@ namespace ArraysAndFunctions
          Console.WriteLine("Определить возраст человека на сегодня");
          Console.WriteLine("---------------------------------------------------------");
          // Метод проверки правильности ввода месяца
-         int InputMonth(int month3)
+         int InputMonth(int month)
          {
-            while (month3 > 12 | month3 <= 0)
+            while (month > 12 | month <= 0)
             {
                Console.WriteLine("Введите корректный месяц: ");
-               month3 = Convert.ToInt32(Console.ReadLine());
+               month = Convert.ToInt32(Console.ReadLine());
             }
-            return month3;
+            return month;
          }
 
          // Метод проверки правильности ввода дня
-         int InputDay(int day3)
+         int InputDay(int day)
          {
-            while (day3 > 31 | day3 <= 0)
+            while (day > 31 | day <= 0)
             {
                Console.WriteLine("Введите корректную дату: ");
-               day3 = Convert.ToInt32(Console.ReadLine());
+               day = Convert.ToInt32(Console.ReadLine());
             }
-            return day3;
+            return day;
          }
 
          Console.Write("Введите дату рождения: ");
          Console.Write("Год: ");
-         int year1 = Convert.ToInt32(Console.ReadLine());
+         int yearone = Convert.ToInt32(Console.ReadLine());
          Console.Write("Месяц: ");
-         int month1 = Convert.ToInt32(Console.ReadLine());
-         month1 = InputMonth(month1);
+         int monthone = Convert.ToInt32(Console.ReadLine());
+         monthone = InputMonth(monthone);
          Console.Write("День: ");
-         int day1 = Convert.ToInt32(Console.ReadLine());
-         day1 = InputDay(day1);
+         int dayone = Convert.ToInt32(Console.ReadLine());
+         dayone = InputDay(dayone);
 
          Console.Write("Введите текущую дату: ");
          Console.Write("Год: ");
-         int year2 = Convert.ToInt32(Console.ReadLine());
+         int yeartwo = Convert.ToInt32(Console.ReadLine());
          Console.Write("Месяц: ");
-         int month2 = Convert.ToInt32(Console.ReadLine());
-         month2 = InputMonth(month2);
+         int monthtwo = Convert.ToInt32(Console.ReadLine());
+         monthtwo = InputMonth(monthtwo);
          Console.Write("День: ");
-         int day2 = Convert.ToInt32(Console.ReadLine());
-         day2 = InputDay(day2);
+         int daytwo = Convert.ToInt32(Console.ReadLine());
+         daytwo = InputDay(daytwo);
 
          // Метод расчета возраста
-         void InputAge(int year_1, int year_2, int month_1, int month_2, int day_1, int day_2)
+         void InputAge(int yearbirth, int year_2, int monthbirth, int month_2, int daybirth, int day_2)
          {
             int age = 0;
-            if (year_2 > year_1)
-               if ((month_2 < month_1) & (day_2 < day_1))
-                  age = year_2 - year_1 - 1;
+            if (year_2 > yearbirth)
+               if ((month_2 < monthbirth) & (day_2 < daybirth))
+                  age = year_2 - yearbirth - 1;
                else
-                  age = year_2 - year_1;
+                  age = year_2 - yearbirth;
             Console.WriteLine("Возраст (количество полных лет) = " + age);
          }
 
-         InputAge(year1, year2, month1, month2, day1, day2);
+         InputAge(yearone, yeartwo, monthone, monthtwo, dayone, daytwo);
 
          Console.WriteLine("------------------------------------------");
          Console.WriteLine("Определить размер депозита через n месяцев");
