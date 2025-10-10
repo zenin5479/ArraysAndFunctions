@@ -62,33 +62,33 @@ namespace ArraysAndFunctions
          Console.Write("Введите порядковый номер цифры в числе: ");
          int n = Convert.ToInt32(Console.ReadLine());
          // Метод выводит выводит заданную цифру числа или сообщает, что такой цифры нет
-         void Fun(int numbertwo)
+         void Fun(int itemone)
          {
-            int num1 = Math.Abs(numbertwo);
-            int digit1 = 0;
+            int numone = Math.Abs(itemone);
+            int digitone = 0;
             // Расчет количества разрядов в числе
-            while (num1 > 0)
+            while (numone > 0)
             {
-               num1 /= 10;
-               digit1++;
+               numone /= 10;
+               digitone++;
             }
 
-            int[] array = new int[digit1];
+            int[] array = new int[digitone];
             // Метод переворачивает число
-            int numB = Math.Abs(Perenert(numbertwo));
+            int numB = Math.Abs(Perenert(itemone));
             int s = numB;
-            int digit2 = 0;
+            int digittwo = 0;
             // Число переводится в массив
             while (numB > 0)
             {
                numB /= 10;
                int numA = s - numB * 10;
-               array[digit2] = numA;
+               array[digittwo] = numA;
                s /= 10;
-               digit2++;
+               digittwo++;
             }
             // Проверка условия наличия цифры в знаке числа
-            if (n < digit2 + 1)
+            if (n < digittwo + 1)
             {
                Console.WriteLine("Цифра в числе " + item + " под №" + n + " имеет значениe: " + array[n - 1]);
             }
