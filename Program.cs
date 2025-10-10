@@ -198,7 +198,7 @@ namespace ArraysAndFunctions
          Isosceles(a, b, c);
 
          Console.WriteLine("---------------------------------------------------------");
-         Console.WriteLine("Определить возраст человека на сегодня");
+         Console.WriteLine("Определить возраст человека");
          Console.WriteLine("---------------------------------------------------------");
          // Метод проверки правильности ввода месяца
          int InputMonth(int month)
