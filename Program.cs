@@ -282,6 +282,32 @@ namespace ArraysAndFunctions
 
          // Доп задача: Дано натуральное число, в котором все цифры различны
          // Определить, какая цифра расположена в нем левее: максимальная или минимальная
+
+         Console.Write("Введите натуральное число с разными цифрами: ");
+         int num = int.Parse(Console.ReadLine());
+
+         string numStr = num.ToString();
+         char maxDigit = numStr[0];
+         char minDigit = numStr[0];
+
+         // Находим максимальную и минимальную цифры
+         foreach (char digit in numStr)
+         {
+            if (digit > maxDigit) maxDigit = digit;
+            if (digit < minDigit) minDigit = digit;
+         }
+
+         // Определяем позиции цифр
+         int maxIndex = numStr.IndexOf(maxDigit);
+         int minIndex = numStr.IndexOf(minDigit);
+
+         // Сравниваем позиции
+         if (maxIndex < minIndex)
+            Console.WriteLine($"Максимальная цифра {maxDigit} левее минимальной {minDigit}");
+         else if (minIndex < maxIndex)
+            Console.WriteLine($"Минимальная цифра {minDigit} левее максимальной {maxDigit}");
+
+         Console.ReadKey();
       }
    }
 }
