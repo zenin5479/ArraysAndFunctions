@@ -303,17 +303,37 @@ namespace ArraysAndFunctions
          }
 
          // Определяем позиции цифр
-         int maxIndex = numStr.IndexOf(maxDigit);
-         int minIndex = numStr.IndexOf(minDigit);
+         int maxI = numStr.IndexOf(maxDigit);
+         int minI = numStr.IndexOf(minDigit);
          // Сравниваем позиции
-         if (maxIndex < minIndex)
+         if (maxI < minI)
          {
             Console.WriteLine($"Максимальная цифра {maxDigit} левее минимальной {minDigit}");
          }
-         else if (minIndex < maxIndex)
+         else if (minI < maxI)
          {
             Console.WriteLine($"Минимальная цифра {minDigit} левее максимальной {maxDigit}");
          }
+
+
+         Console.Write("Введите натуральное число с разными цифрами: ");
+         int numbe = int.Parse(Console.ReadLine());
+
+         char[] digits = numbe.ToString().ToCharArray();
+
+         int maxIndex = 0, minIndex = 0;
+
+         for (int i = 1; i < digits.Length; i++)
+         {
+            if (digits[i] > digits[maxIndex]) maxIndex = i;
+            if (digits[i] < digits[minIndex]) minIndex = i;
+         }
+
+         if (maxIndex < minIndex)
+            Console.WriteLine($"Максимальная цифра {digits[maxIndex]} левее минимальной {digits[minIndex]}");
+         else if (minIndex < maxIndex)
+            Console.WriteLine($"Минимальная цифра {digits[minIndex]} левее максимальной {digits[maxIndex]}");
+
 
          Console.ReadKey();
       }
