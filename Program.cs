@@ -304,7 +304,9 @@ namespace ArraysAndFunctions
 
          // Сравниваем позиции
          if (maxIndex < minIndex)
+         {
             Console.WriteLine($"Максимальная цифра {maxDigit} левее минимальной {minDigit}");
+         }
          else if (minIndex < maxIndex)
             Console.WriteLine($"Минимальная цифра {minDigit} левее максимальной {maxDigit}");
 
