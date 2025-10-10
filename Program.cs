@@ -243,14 +243,14 @@ namespace ArraysAndFunctions
          daytwo = InputDay(daytwo);
 
          // Метод расчета возраста
-         void InputAge(int yearbirth, int year_2, int monthbirth, int month_2, int daybirth, int day_2)
+         void InputAge(int yearbirth, int yeartoday, int monthbirth, int monthtoday, int daybirth, int daytoday)
          {
             int age = 0;
-            if (year_2 > yearbirth)
-               if ((month_2 < monthbirth) & (day_2 < daybirth))
-                  age = year_2 - yearbirth - 1;
+            if (yeartoday > yearbirth)
+               if ((monthtoday < monthbirth) & (daytoday < daybirth))
+                  age = yeartoday - yearbirth - 1;
                else
-                  age = year_2 - yearbirth;
+                  age = yeartoday - yearbirth;
             Console.WriteLine("Возраст (количество полных лет) = " + age);
          }
 
