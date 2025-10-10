@@ -22,17 +22,17 @@ namespace ArraysAndFunctions
          Console.Write("Введите целое число: ");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод для переворачивания целого числа
-         int Perenert(int number1)
+         int Perenert(int numberone)
          {
-            int i = number1;
-            if (i < 0) number1 = -1 * number1;
+            int i = numberone;
+            if (i < 0) numberone = -1 * numberone;
             int number2 = 0;
-            while (number1 > 0)
+            while (numberone > 0)
             {
                // Находим остаток - последнюю цифру исходного числа
-               int digit = number1 % 10;
+               int digit = numberone % 10;
                // Удаляем последнюю цифру исходного числа (уменьшаем разрядность)
-               number1 /= 10;
+               numberone /= 10;
                // Формируем новое  второе число (увеличиваем разрядность)
                number2 *= 10;
                // Добавляем цифру в разряд втрого числа
@@ -48,23 +48,23 @@ namespace ArraysAndFunctions
          Console.WriteLine("Программа, которая выводит заданную цифру числа или сообщает, что такой цифры нет");
          Console.WriteLine("---------------------------------------------------------------------------------");
          Console.Write("Введите целое число: ");
-         int number1 = Convert.ToInt32(Console.ReadLine());
-         if (number1 == 0)
+         int item = Convert.ToInt32(Console.ReadLine());
+         if (item == 0)
          {
-            while (number1 == 0)
+            while (item == 0)
             {
                Console.Write("Введите целое число отличнное от 0: ");
                int number2 = Convert.ToInt32(Console.ReadLine());
-               number1 = number2;
+               item = number2;
             }
          }
 
          Console.Write("Введите порядковый номер цифры в числе: ");
          int n = Convert.ToInt32(Console.ReadLine());
          // Метод выводит выводит заданную цифру числа или сообщает, что такой цифры нет
-         void Fun(int num)
+         void Fun(int numbertwo)
          {
-            int num1 = Math.Abs(num);
+            int num1 = Math.Abs(numbertwo);
             int digit1 = 0;
             // Расчет количества разрядов в числе
             while (num1 > 0)
@@ -75,7 +75,7 @@ namespace ArraysAndFunctions
 
             int[] array = new int[digit1];
             // Метод переворачивает число
-            int numB = Math.Abs(Perenert(num));
+            int numB = Math.Abs(Perenert(numbertwo));
             int s = numB;
             int digit2 = 0;
             // Число переводится в массив
@@ -90,14 +90,14 @@ namespace ArraysAndFunctions
             // Проверка условия наличия цифры в знаке числа
             if (n < digit2 + 1)
             {
-               Console.WriteLine("Цифра в числе " + number1 + " под №" + n + " имеет значениe: " + array[n - 1]);
+               Console.WriteLine("Цифра в числе " + item + " под №" + n + " имеет значениe: " + array[n - 1]);
             }
             else
             {
                Console.WriteLine("Цифра в числе под №" + n + " отсутствует");
             }
          }
-         Fun(number1);
+         Fun(item);
 
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------------");
          Console.WriteLine("Программа, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным");
@@ -183,9 +183,9 @@ namespace ArraysAndFunctions
          Console.Write("Введите сторону c треугольника: ");
          int c = Convert.ToInt32(Console.ReadLine());
 
-         void Isosceles(int a1, int b1, int c1)
+         void Isosceles(int d, int e, int f)
          {
-            if ((a1 == b1) | (a1 == c1) | (b1 == c1))
+            if ((d == e) | (d == f) | (e == f))
             {
                Console.WriteLine("Треугольник равнобедренный");
             }
