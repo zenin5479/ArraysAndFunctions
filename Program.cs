@@ -15,7 +15,40 @@ namespace ArraysAndFunctions
    internal class Program
    {
       static void Main(string[] args)
-      {
+      { 
+         // Доп задача: Дано натуральное число, в котором все цифры различны
+         // Определить, какая цифра расположена в нем левее: максимальная или минимальная
+         Console.Write("Введите натуральное число с разными цифрами: ");
+         int al;
+         bool numb = int.TryParse(Console.ReadLine(), out al);
+         if (numb)
+         {
+            char[] digits = al.ToString().ToCharArray();
+            int maxIndex = 0;
+            int minIndex = 0;
+            for (int i = 1; i < digits.Length; i++)
+            {
+               if (digits[i] > digits[maxIndex])
+               {
+                  maxIndex = i;
+               }
+
+               if (digits[i] < digits[minIndex])
+               {
+                  minIndex = i;
+               }
+            }
+
+            if (maxIndex < minIndex)
+            {
+               Console.WriteLine($"Максимальная цифра {digits[maxIndex]} левее минимальной {digits[minIndex]}");
+            }
+            else if (minIndex < maxIndex)
+            {
+               Console.WriteLine($"Минимальная цифра {digits[minIndex]} левее максимальной {digits[maxIndex]}");
+            }
+         }
+
          Console.WriteLine("---------------------------------------------------------------------------------------");
          Console.WriteLine("Программа, которая принимает на вход целое число и на выходе выводит перевёрнутое число");
          Console.WriteLine("---------------------------------------------------------------------------------------");
@@ -280,34 +313,7 @@ namespace ArraysAndFunctions
 
          DepositPercent(deposit, period);
 
-         // Доп задача: Дано натуральное число, в котором все цифры различны
-         // Определить, какая цифра расположена в нем левее: максимальная или минимальная
-         Console.Write("Введите натуральное число с разными цифрами: ");
-         int numbe = int.Parse(Console.ReadLine());
-         char[] digits = numbe.ToString().ToCharArray();
-         int maxIndex = 0;
-         int minIndex = 0;
-         for (int i = 1; i < digits.Length; i++)
-         {
-            if (digits[i] > digits[maxIndex])
-            {
-               maxIndex = i;
-            }
 
-            if (digits[i] < digits[minIndex])
-            {
-               minIndex = i;
-            }
-         }
-
-         if (maxIndex < minIndex)
-         {
-            Console.WriteLine($"Максимальная цифра {digits[maxIndex]} левее минимальной {digits[minIndex]}");
-         }
-         else if (minIndex < maxIndex)
-         {
-            Console.WriteLine($"Минимальная цифра {digits[minIndex]} левее максимальной {digits[maxIndex]}");
-         }
 
          Console.ReadKey();
       }
