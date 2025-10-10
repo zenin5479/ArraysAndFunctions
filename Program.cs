@@ -284,11 +284,9 @@ namespace ArraysAndFunctions
          // Определить, какая цифра расположена в нем левее: максимальная или минимальная
          Console.Write("Введите натуральное число с разными цифрами: ");
          int num = int.Parse(Console.ReadLine());
-
          string numStr = num.ToString();
          char maxDigit = numStr[0];
          char minDigit = numStr[0];
-
          // Находим максимальную и минимальную цифры
          for (int index = 0; index < numStr.Length; index++)
          {
@@ -307,7 +305,6 @@ namespace ArraysAndFunctions
          // Определяем позиции цифр
          int maxIndex = numStr.IndexOf(maxDigit);
          int minIndex = numStr.IndexOf(minDigit);
-
          // Сравниваем позиции
          if (maxIndex < minIndex)
          {
