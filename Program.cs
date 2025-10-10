@@ -263,7 +263,7 @@ namespace ArraysAndFunctions
          int period = Convert.ToInt32(Console.ReadLine());
          double deposit = 1000;
          // Метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
-         void depositPercent(double donation, int time)
+         void DepositPercent(double donation, int time)
          {
             int ind = 1;
             double money = donation;
@@ -278,7 +278,7 @@ namespace ArraysAndFunctions
             Console.WriteLine("Вклад с учетом процентов = " + Math.Round(donation, 2) + " рублей");
          }
 
-         depositPercent(deposit, period);
+         DepositPercent(deposit, period);
 
          // Доп задача: Дано натуральное число, в котором все цифры различны
          // Определить, какая цифра расположена в нем левее: максимальная или минимальная
