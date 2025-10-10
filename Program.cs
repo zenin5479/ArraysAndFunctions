@@ -293,7 +293,7 @@ namespace ArraysAndFunctions
          // Находим максимальную и минимальную цифры
          for (int index = 0; index < numStr.Length; index++)
          {
-            var digit = numStr[index];
+            char digit = numStr[index];
             if (digit > maxDigit) maxDigit = digit;
             if (digit < minDigit) minDigit = digit;
          }
