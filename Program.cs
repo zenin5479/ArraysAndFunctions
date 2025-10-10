@@ -103,12 +103,12 @@ namespace ArraysAndFunctions
          Console.WriteLine("Программа, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным");
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------------");
          Console.Write("Введите порядковый номер недели от 1 до 7: ");
-         int number3 = Convert.ToInt32(Console.ReadLine());
+         int issue = Convert.ToInt32(Console.ReadLine());
          string ss;
          // Метод определения является день недели ли выходным или нет
-         string Weekend(int num6)
+         string Weekend(int numberthree)
          {
-            if ((num6 == 6) | (num6 == 7))
+            if ((numberthree == 6) | (numberthree == 7))
             {
                ss = " - является выходным";
             }
@@ -122,45 +122,45 @@ namespace ArraysAndFunctions
          string s;
 
          // Метод определения дня недели по числу
-         string Week(int num5)
+         string Week(int issueone)
          {
-            if (num5 == 1)
+            if (issueone == 1)
             {
                s = "Понедельник";
                return s;
             }
 
-            if (num5 == 2)
+            if (issueone == 2)
             {
                s = "Вторник";
                return s;
             }
 
-            if (num5 == 3)
+            if (issueone == 3)
             {
                s = "Среда";
                return s;
             }
 
-            if (num5 == 4)
+            if (issueone == 4)
             {
                s = "Четверг";
                return s;
             }
 
-            if (num5 == 5)
+            if (issueone == 5)
             {
                s = "Пятница";
                return s;
             }
 
-            if (num5 == 6)
+            if (issueone == 6)
             {
                s = "Суббота";
                return s;
             }
 
-            if (num5 == 7)
+            if (issueone == 7)
             {
                s = "Воскресенье";
                return s;
@@ -170,7 +170,7 @@ namespace ArraysAndFunctions
             return s;
          }
 
-         Console.WriteLine(number3 + " - " + Week(number3) + Weekend(number3));
+         Console.WriteLine(issue + " - " + Week(issue) + Weekend(issue));
 
          // Дополнительные задачи
          Console.WriteLine("------------------------------------------------------------------------------------------");
