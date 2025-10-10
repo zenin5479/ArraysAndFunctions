@@ -260,25 +260,25 @@ namespace ArraysAndFunctions
          Console.WriteLine("Определить размер депозита через n месяцев");
          Console.WriteLine(" -----------------------------------------");
          Console.Write("Введите количество месяцев: ");
-         int mounth = Convert.ToInt32(Console.ReadLine());
-         double vklad = 1000;
+         int period = Convert.ToInt32(Console.ReadLine());
+         double deposit = 1000;
          // Метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
-         void VkladPercent(double vklad1, int mounth1)
+         void VkladPercent(double donation, int time)
          {
             int ind = 1;
-            double sum = vklad1;
+            double sum = donation;
             double percent = 1.5 / 100;
-            while (ind <= mounth1)
+            while (ind <= time)
             {
-               vklad1 = sum * percent + sum;
-               sum = vklad1;
+               donation = sum * percent + sum;
+               sum = donation;
                ind += 1;
             }
-            Console.WriteLine("Процент ежемесячный = " + percent * 100 + "%" + ", количество месяцев по вкладу = " + mounth1);
-            Console.WriteLine("Вклад с учетом процентов = " + Math.Round(vklad1, 2) + " рублей");
+            Console.WriteLine("Процент ежемесячный = " + percent * 100 + "%" + ", количество месяцев по вкладу = " + time);
+            Console.WriteLine("Вклад с учетом процентов = " + Math.Round(donation, 2) + " рублей");
          }
 
-         VkladPercent(vklad, mounth);
+         VkladPercent(deposit, period);
 
          // Доп задача: Дано натуральное число, в котором все цифры различны
          // Определить, какая цифра расположена в нем левее: максимальная или минимальная
