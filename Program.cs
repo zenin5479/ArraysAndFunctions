@@ -282,7 +282,7 @@ namespace ArraysAndFunctions
 
          // Доп задача: Дано натуральное число, в котором все цифры различны
          // Определить, какая цифра расположена в нем левее: максимальная или минимальная
-        Console.Write("Введите натуральное число с разными цифрами: ");
+         Console.Write("Введите натуральное число с разными цифрами: ");
          int numbe = int.Parse(Console.ReadLine());
          char[] digits = numbe.ToString().ToCharArray();
          int maxIndex = 0, minIndex = 0;
