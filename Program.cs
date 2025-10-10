@@ -291,8 +291,9 @@ namespace ArraysAndFunctions
          char minDigit = numStr[0];
 
          // Находим максимальную и минимальную цифры
-         foreach (char digit in numStr)
+         for (int index = 0; index < numStr.Length; index++)
          {
+            var digit = numStr[index];
             if (digit > maxDigit) maxDigit = digit;
             if (digit < minDigit) minDigit = digit;
          }
