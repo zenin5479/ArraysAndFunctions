@@ -266,12 +266,12 @@ namespace ArraysAndFunctions
          void VkladPercent(double donation, int time)
          {
             int ind = 1;
-            double sum = donation;
+            double money = donation;
             double percent = 1.5 / 100;
             while (ind <= time)
             {
-               donation = sum * percent + sum;
-               sum = donation;
+               donation = money * percent + money;
+               money = donation;
                ind += 1;
             }
             Console.WriteLine("Процент ежемесячный = " + percent * 100 + "%" + ", количество месяцев по вкладу = " + time);
