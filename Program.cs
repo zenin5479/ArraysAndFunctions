@@ -265,14 +265,14 @@ namespace ArraysAndFunctions
          // Метод расчета суммы вклада от кол месяцев  с процентом 1,5% ежемесячно
          void DepositPercent(double donation, int time)
          {
-            int ind = 1;
+            int first = 1;
             double money = donation;
             double percent = 1.5 / 100;
-            while (ind <= time)
+            while (first <= time)
             {
                donation = money * percent + money;
                money = donation;
-               ind += 1;
+               first += 1;
             }
             Console.WriteLine("Процент ежемесячный = " + percent * 100 + "%" + ", количество месяцев по вкладу = " + time);
             Console.WriteLine("Вклад с учетом процентов = " + Math.Round(donation, 2) + " рублей");
