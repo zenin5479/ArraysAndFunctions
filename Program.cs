@@ -294,8 +294,15 @@ namespace ArraysAndFunctions
          for (int index = 0; index < numStr.Length; index++)
          {
             char digit = numStr[index];
-            if (digit > maxDigit) maxDigit = digit;
-            if (digit < minDigit) minDigit = digit;
+            if (digit > maxDigit)
+            {
+               maxDigit = digit;
+            }
+
+            if (digit < minDigit)
+            {
+               minDigit = digit;
+            }
          }
 
          // Определяем позиции цифр
