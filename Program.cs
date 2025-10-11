@@ -16,46 +16,7 @@ namespace ArraysAndFunctions
    {
       static void Main(string[] args)
       {
-         // Доп задача: Дано натуральное число, в котором все цифры различны
-         // Определить, какая цифра расположена в нем левее: максимальная или минимальная
-         Console.Write("Введите натуральное число с разными цифрами: ");
-         int naturalnumber;
-         bool flag = int.TryParse(Console.ReadLine(), out naturalnumber);
-         string line = naturalnumber.ToString();
-         char[] digits = new char[line.Length];
-         int m = 0;
-         while (m < digits.Length)
-         {
-            digits[m] = line[m];
-            m++;
-         }
-
-         if (flag)
-         {
-            int maxIndex = 0;
-            int minIndex = 0;
-            for (int i = 1; i < digits.Length; i++)
-            {
-               if (digits[i] > digits[maxIndex])
-               {
-                  maxIndex = i;
-               }
-
-               if (digits[i] < digits[minIndex])
-               {
-                  minIndex = i;
-               }
-            }
-
-            if (maxIndex < minIndex)
-            {
-               Console.WriteLine($"Максимальная цифра {digits[maxIndex]} левее минимальной {digits[minIndex]}");
-            }
-            else if (minIndex < maxIndex)
-            {
-               Console.WriteLine($"Минимальная цифра {digits[minIndex]} левее максимальной {digits[maxIndex]}");
-            }
-         }
+        
 
          Console.WriteLine("---------------------------------------------------------------------------------------");
          Console.WriteLine("Программа, которая принимает на вход целое число и на выходе выводит перевёрнутое число");
@@ -320,6 +281,47 @@ namespace ArraysAndFunctions
          }
 
          DepositPercent(deposit, period);
+
+ // Доп задача: Дано натуральное число, в котором все цифры различны
+         // Определить, какая цифра расположена в нем левее: максимальная или минимальная
+         Console.Write("Введите натуральное число с разными цифрами: ");
+         int naturalnumber;
+         bool flag = int.TryParse(Console.ReadLine(), out naturalnumber);
+         string line = naturalnumber.ToString();
+         char[] digits = new char[line.Length];
+         int m = 0;
+         while (m < digits.Length)
+         {
+            digits[m] = line[m];
+            m++;
+         }
+
+         if (flag)
+         {
+            int maxIndex = 0;
+            int minIndex = 0;
+            for (int i = 1; i < digits.Length; i++)
+            {
+               if (digits[i] > digits[maxIndex])
+               {
+                  maxIndex = i;
+               }
+
+               if (digits[i] < digits[minIndex])
+               {
+                  minIndex = i;
+               }
+            }
+
+            if (maxIndex < minIndex)
+            {
+               Console.WriteLine($"Максимальная цифра {digits[maxIndex]} левее минимальной {digits[minIndex]}");
+            }
+            else if (minIndex < maxIndex)
+            {
+               Console.WriteLine($"Минимальная цифра {digits[minIndex]} левее максимальной {digits[maxIndex]}");
+            }
+         }
 
 
 
