@@ -32,7 +32,6 @@ namespace ArraysAndFunctions
 
          if (flag)
          {
-
             int maxIndex = 0;
             int minIndex = 0;
             for (int i = 1; i < digits.Length; i++)
