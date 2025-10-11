@@ -323,8 +323,6 @@ namespace ArraysAndFunctions
             }
          }
 
-
-
          Console.ReadKey();
       }
    }
