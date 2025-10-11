@@ -21,15 +21,14 @@ namespace ArraysAndFunctions
          Console.Write("Введите натуральное число с разными цифрами: ");
          int naturalnumber = 0;
          string line = naturalnumber.ToString();
-
          bool flag = int.TryParse(Console.ReadLine(), out naturalnumber);
          if (flag)
          {
-            int[] digits = { line.Length };
+            char[] digits = { (char)line.Length };
             int m = 0;
             while (m < digits.Length)
             {
-               digits[m] = naturalnumber.ToString()[m];
+               digits[m] = line[m];
                m++;
             }
 
