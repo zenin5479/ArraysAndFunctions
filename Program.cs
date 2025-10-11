@@ -24,6 +24,9 @@ namespace ArraysAndFunctions
          if (numb)
          {
             char[] digits = al.ToString().ToCharArray();
+
+
+
             int maxIndex = 0;
             int minIndex = 0;
             for (int i = 1; i < digits.Length; i++)
