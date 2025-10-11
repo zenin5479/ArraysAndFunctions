@@ -19,18 +19,20 @@ namespace ArraysAndFunctions
          // Доп задача: Дано натуральное число, в котором все цифры различны
          // Определить, какая цифра расположена в нем левее: максимальная или минимальная
          Console.Write("Введите натуральное число с разными цифрами: ");
-         int naturalnumber = 0;
-         string line = naturalnumber.ToString();
+         int naturalnumber;
          bool flag = int.TryParse(Console.ReadLine(), out naturalnumber);
+         string line = naturalnumber.ToString();
+         char[] digits = new char[line.Length];
+         int m = 0;
+         while (m < digits.Length)
+         {
+            digits[m] = line[m];
+            m++;
+         }
+
          if (flag)
          {
-            char[] digits = { (char)line.Length };
-            int m = 0;
-            while (m < digits.Length)
-            {
-               digits[m] = line[m];
-               m++;
-            }
+
 
             int maxIndex = 0;
             int minIndex = 0;
