@@ -23,7 +23,7 @@ namespace ArraysAndFunctions
          bool numb = int.TryParse(Console.ReadLine(), out al);
          if (numb)
          {
-            int[] digits = { al.ToString().Length };
+            char[] digits = new char[al.ToString().Length];
             int m = 0;
             while (m < digits.Length)
             {
