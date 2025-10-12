@@ -22,7 +22,7 @@ namespace ArraysAndFunctions
       static void Main(string[] args)
       {
          Console.WriteLine("---------------------------------------------------------------------------------------");
-         Console.WriteLine("Программа, которая принимает на вход целое число и на выходе выводит перевёрнутое число");
+         Console.WriteLine("Перевёрнутое число");
          Console.WriteLine("---------------------------------------------------------------------------------------");
          Console.Write("Введите целое число: ");
          int number = Convert.ToInt32(Console.ReadLine());
@@ -50,7 +50,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Числу: " + number + " соответствует перевернутое число: " + Perenert(number));
 
          Console.WriteLine("---------------------------------------------------------------------------------");
-         Console.WriteLine("Программа, которая выводит заданную цифру числа или сообщает, что такой цифры нет");
+         Console.WriteLine("Проверка наличия цыфры в числе");
          Console.WriteLine("---------------------------------------------------------------------------------");
          Console.Write("Введите целое число: ");
          int item = Convert.ToInt32(Console.ReadLine());
@@ -105,7 +105,7 @@ namespace ArraysAndFunctions
          Fun(item);
 
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------------");
-         Console.WriteLine("Программа, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным");
+         Console.WriteLine("Проверка дня недели");
          Console.WriteLine("-----------------------------------------------------------------------------------------------------------------");
          Console.Write("Введите порядковый номер недели от 1 до 7: ");
          int issue = Convert.ToInt32(Console.ReadLine());
@@ -179,7 +179,7 @@ namespace ArraysAndFunctions
 
          // Дополнительные задачи
          Console.WriteLine("------------------------------------------------------------------------------------------");
-         Console.WriteLine("Программа, которая определяет, является ли треугольник со сторонами a, b, c равнобедренным");
+         Console.WriteLine("Проверка на равнобедренность треугольника со сторонами a, b, c");
          Console.WriteLine("------------------------------------------------------------------------------------------");
          Console.Write("Введите сторону a треугольника: ");
          int a = Convert.ToInt32(Console.ReadLine());
@@ -203,7 +203,7 @@ namespace ArraysAndFunctions
          Isosceles(a, b, c);
 
          Console.WriteLine("---------------------------------------------------------");
-         Console.WriteLine("Определить возраст человека");
+         Console.WriteLine("Определение возраста человека");
          Console.WriteLine("---------------------------------------------------------");
          // Метод проверки правильности ввода месяца
          int InputMonth(int month)
@@ -269,7 +269,7 @@ namespace ArraysAndFunctions
          InputAge(yearone, yeartwo, monthone, monthtwo, dayone, daytwo);
 
          Console.WriteLine("------------------------------------------");
-         Console.WriteLine("Определить размер депозита через n месяцев");
+         Console.WriteLine("Определение размера депозита через n месяцев");
          Console.WriteLine(" -----------------------------------------");
          Console.Write("Введите количество месяцев: ");
          int period = Convert.ToInt32(Console.ReadLine());
@@ -294,7 +294,7 @@ namespace ArraysAndFunctions
 
          // Доп задача: Дано натуральное число, в котором все цифры различны
          // Определить, какая цифра расположена в нем левее: максимальная или минимальная
-         Console.Write("Введите натуральное число с разными цифрами: ");
+         Console.Write("Определение расположения максимальной и минимальной цифр в натуральном числе с разными цифрами: ");
          int naturalnumber;
          bool flag = int.TryParse(Console.ReadLine(), out naturalnumber);
          string line = naturalnumber.ToString();
