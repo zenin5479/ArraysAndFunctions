@@ -32,7 +32,7 @@ namespace ArraysAndFunctions
          {
             int i = numberone;
             if (i < 0) numberone = -1 * numberone;
-            int number2 = 0;
+            int numbertwo = 0;
             while (numberone > 0)
             {
                // Находим остаток - последнюю цифру исходного числа
@@ -40,12 +40,12 @@ namespace ArraysAndFunctions
                // Удаляем последнюю цифру исходного числа (уменьшаем разрядность)
                numberone /= 10;
                // Формируем новое  второе число (увеличиваем разрядность)
-               number2 *= 10;
+               numbertwo *= 10;
                // Добавляем цифру в разряд втрого числа
-               number2 += digit;
+               numbertwo += digit;
             }
-            if (i < 0) return -1 * number2;
-            return number2;
+            if (i < 0) return -1 * numbertwo;
+            return numbertwo;
          }
 
          Console.WriteLine("Числу: " + number + " соответствует перевернутое число: " + Perenert(number));
@@ -60,8 +60,8 @@ namespace ArraysAndFunctions
             while (item == 0)
             {
                Console.Write("Введите целое число отличнное от 0: ");
-               int number2 = Convert.ToInt32(Console.ReadLine());
-               item = number2;
+               int itemone = Convert.ToInt32(Console.ReadLine());
+               item = itemone;
             }
          }
 
@@ -81,7 +81,7 @@ namespace ArraysAndFunctions
 
             int[] array = new int[digitone];
             // Метод переворачивает число
-            int numB = Math.Abs(Perenert(itemone));
+            int numB = Math.Abs(Inversions(itemone));
             int s = numB;
             int digittwo = 0;
             // Число переводится в массив
@@ -332,63 +332,63 @@ namespace ArraysAndFunctions
          Console.WriteLine(" Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N. ");
          Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
 
-         Random rnd = new Random();
-         int N = rnd.Next(1, 20);
+         Random randomized = new Random();
+         int v = randomized.Next(1, 20);
          Console.WriteLine("_________________________________");
          Console.WriteLine("Таблица кубов чисел");
          Console.WriteLine("_________________________________");
          Console.WriteLine("");
-         Console.WriteLine("N = " + N);
+         Console.WriteLine("N = " + v);
          Console.WriteLine("");
-         for (int i = 1; i <= N; i++)
+         for (int i = 1; i <= v; i++)
          {
             string text = "--------+--------\n";
             text = text + "|  " + i + "\t|  " + i * i * i + "\t|";
             Console.WriteLine(text);
          }
 
-         //Console.WriteLine(" ----------------------------------------------------------------------------------------------------------------------- ");
-         //Console.WriteLine(" Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
-         //Console.WriteLine(" ----------------------------------------------------------------------------------------------------------------------- ");
+         Console.WriteLine(" ----------------------------------------------------------------------------------------------------------------------- ");
+         Console.WriteLine(" Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
+         Console.WriteLine(" ----------------------------------------------------------------------------------------------------------------------- ");
 
-         //int aX = rnd.Next(-5, 5);
-         //int aY = rnd.Next(-5, 5);
-         //int aZ = rnd.Next(-5, 5);
-         //int bX = rnd.Next(-5, 5);
-         //int bY = rnd.Next(-5, 5);
-         //int bZ = rnd.Next(-5, 5);
+         int aX = randomized.Next(-5, 5);
+         int aY = randomized.Next(-5, 5);
+         int aZ = randomized.Next(-5, 5);
+         int bX = randomized.Next(-5, 5);
+         int bY = randomized.Next(-5, 5);
+         int bZ = randomized.Next(-5, 5);
 
-         //// формула длина отрезка 3D = SQRT((aX-bX)^2 + (aY-bY)^2 + (aZ-bZ)^2 )
-         //Console.WriteLine("т. А -  [" + aX + ", " + aY + ", " + aZ + "]");
-         //Console.WriteLine("т. B -  [" + bX + ", " + bY + ", " + bZ + "]");
-         //Console.WriteLine("длина отрезка AB в 3D = " + Math.Sqrt((aX - bX) * (aX - bX) + (aY - bY) * (aY - bY) + (aZ - bZ) * (aZ - bZ)));
+         // формула длина отрезка 3D = SQRT((aX-bX)^2 + (aY-bY)^2 + (aZ-bZ)^2 )
+         Console.WriteLine("т. А -  [" + aX + ", " + aY + ", " + aZ + "]");
+         Console.WriteLine("т. B -  [" + bX + ", " + bY + ", " + bZ + "]");
+         Console.WriteLine("длина отрезка AB в 3D = " + Math.Sqrt((aX - bX) * (aX - bX) + (aY - bY) * (aY - bY) + (aZ - bZ) * (aZ - bZ)));
 
 
-         //Console.WriteLine(" ---------------------вариант с числовым форматом-------------------------------------------------------- ");
-         //Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
-         //Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
+         Console.WriteLine(" ---------------------вариант с числовым форматом-------------------------------------------------------- ");
+         Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
+         Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
 
-         //int number = Convert.ToInt32(Console.ReadLine());
+         int figure = Convert.ToInt32(Console.ReadLine());
 
-         //int Perenert(int number1)                // метод для переворачивания целого числа
-         //{
-         //   int i = number1;
-         //   if (i < 0) number1 = -1 * number1;
-         //   int number2 = 0;
-         //   while (number1 > 0)
-         //   {
-         //      int digit = number1 % 10;            // находим остаток - последнюю цифру исходного числа
-         //      number1 = number1 / 10;              // удаляем последнюю цифру исходного числа (уменьшаем разрядность)
-         //      number2 = number2 * 10;              // формируем новое  второе число (увеличиваем разрядность)
-         //      number2 = number2 + digit;           // добавляем цифру в разряд втрого числа
-         //   }
-         //   if (i < 0) return number2 = -1 * number2;
-         //   return number2;
-         //}
+         int Inversions(int number1)                // метод для переворачивания целого числа
+         {
+            int i = number1;
+            if (i < 0) number1 = -1 * number1;
+            int number2 = 0;
+            while (number1 > 0)
+            {
+               int digit = number1 % 10;            // находим остаток - последнюю цифру исходного числа
+               number1 = number1 / 10;              // удаляем последнюю цифру исходного числа (уменьшаем разрядность)
+               number2 = number2 * 10;              // формируем новое  второе число (увеличиваем разрядность)
+               number2 = number2 + digit;           // добавляем цифру в разряд втрого числа
+            }
+            if (i < 0) return number2 = -1 * number2;
+            return number2;
+         }
 
-         //int number2 = Perenert(number);
-         //if (number == number2) Console.WriteLine("число:  " + number + "  - является палиндромом");
-         //else Console.WriteLine("число:  " + number + "  - не является палиндромом");
+         int number2 = Inversions(figure);
+         if (figure == number2) Console.WriteLine("число:  " + figure + "  - является палиндромом");
+         else Console.WriteLine("число:  " + figure + "  - не является палиндромом");
 
 
          Console.WriteLine(" ---------------------вариант с форматом строка (более универсальный)------------------------------------ ");
