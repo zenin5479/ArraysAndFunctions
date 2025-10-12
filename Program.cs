@@ -375,7 +375,11 @@ namespace ArraysAndFunctions
          int Inversions(int numeral)                // метод для переворачивания целого числа
          {
             int i = numeral;
-            if (i < 0) numeral = -1 * numeral;
+            if (i < 0)
+            {
+               numeral = -1 * numeral;
+            }
+
             int numeralone = 0;
             while (numeral > 0)
             {
@@ -384,7 +388,11 @@ namespace ArraysAndFunctions
                numeralone *= 10;              // формируем новое  второе число (увеличиваем разрядность)
                numeralone += digit;           // добавляем цифру в разряд втрого числа
             }
-            if (i < 0) return -1 * numeralone;
+            if (i < 0)
+            {
+               return -1 * numeralone;
+            }
+
             return numeralone;
          }
 
@@ -460,22 +468,22 @@ namespace ArraysAndFunctions
          Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
       found:
          Console.WriteLine("Введите номер четверти");
-         int number_chetv = Convert.ToInt32(Console.ReadLine());
+         int numberChetv = Convert.ToInt32(Console.ReadLine());
 
          int xMult = 0; int yMult = 0;
-         if (number_chetv == 1)                                 // расчета мультипликатора для задания точек для определенной четверти
+         if (numberChetv == 1)                                 // расчета мультипликатора для задания точек для определенной четверти
          {
             xMult = 1; yMult = 1;
          }
-         else if (number_chetv == 2)
+         else if (numberChetv == 2)
          {
             xMult = -1; yMult = 1;
          }
-         else if (number_chetv == 3)
+         else if (numberChetv == 3)
          {
             xMult = -1; yMult = -1;
          }
-         else if (number_chetv == 4)
+         else if (numberChetv == 4)
          {
             xMult = 1; yMult = -1;
          }
@@ -485,11 +493,8 @@ namespace ArraysAndFunctions
             goto found;
          }
 
-
          Console.WriteLine("Введите количество точек ");
          int numberPoint = Convert.ToInt32(Console.ReadLine());
-
-
          //Random rand = new Random();
          int[] arrayX = new int[numberPoint];                           // инициализация массива всех  точек по х координате
          int[] arrayY = new int[numberPoint];                           // инициализация массива всех точек  по Y координате
@@ -511,7 +516,6 @@ namespace ArraysAndFunctions
 
          MethodFillArray(arrayX, xMult);                                // заполнение массива координатами Х соответствующей четверти
          MethodFillArray(arrayY, yMult);                                // заполнение массива координатами Y соответствующей четверти
-
          for (int mx = 0; mx < length; mx++)                                       // массив для вывода первоначальных значений точек
          {
             arrayXInput[mx] = arrayX[mx];
