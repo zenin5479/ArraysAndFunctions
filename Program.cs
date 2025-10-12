@@ -15,7 +15,6 @@
 // - 3 -> 1, 8, 27.
 // - 5 -> 1, 8, 27, 64, 125
 
-
 namespace ArraysAndFunctions
 {
    internal class Program
