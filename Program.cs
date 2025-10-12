@@ -531,15 +531,15 @@ namespace ArraysAndFunctions
             {
                if (arrayDistance[j] > arrayDistance[j + 1])
                {
-                  double t_D = arrayDistance[j + 1];
-                  int t_X = arrayX[j + 1];
-                  int t_Y = arrayY[j + 1];
+                  double tD = arrayDistance[j + 1];
+                  int tX = arrayX[j + 1];
+                  int tY = arrayY[j + 1];
                   arrayDistance[j + 1] = arrayDistance[j];
                   arrayX[j + 1] = arrayX[j];
                   arrayY[j + 1] = arrayY[j];
-                  arrayDistance[j] = t_D;
-                  arrayX[j] = t_X;
-                  arrayY[j] = t_Y;
+                  arrayDistance[j] = tD;
+                  arrayX[j] = tX;
+                  arrayY[j] = tY;
                }
             }
          }
