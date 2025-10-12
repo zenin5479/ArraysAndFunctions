@@ -559,7 +559,7 @@ namespace ArraysAndFunctions
          Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
 
          Random rnd1 = new Random();
-         double x1_1 = rnd1.Next(-5, 5);
+         double x11 = rnd1.Next(-5, 5);
          double y1_1 = rnd1.Next(-5, 5);
          double x1_2 = rnd1.Next(-5, 5);
          double y1_2 = rnd1.Next(-5, 5);
@@ -572,8 +572,8 @@ namespace ArraysAndFunctions
          double y = 0, x = 0;
 
          A1 = y1_1 - y1_2;
-         B1 = x1_2 - x1_1;
-         C1 = x1_1 * y1_2 - x1_2 * y1_1;
+         B1 = x1_2 - x11;
+         C1 = x11 * y1_2 - x1_2 * y1_1;
          A2 = y2_1 - y2_2;
          B2 = x2_2 - x2_1;
          C2 = x2_1 * y2_2 - x2_2 * y2_1;
@@ -599,8 +599,8 @@ namespace ArraysAndFunctions
             return result;
          }
 
-         Console.WriteLine("AB:  A = [" + x1_1 + ", " + y1_1 + "];  " + "B = [" + x1_2 + ", " + y1_2 + "];  и   CD:  " + "C = [" + x2_1 + ", " + y2_1 + "];  " + "D = [" + x2_2 + ", " + y2_2 + "];  ");
-         if (((x >= Method_min(x1_1, x1_2)) & (x <= Method_max(x1_1, x1_2))) & (y >= Method_min(y1_1, y1_2)) & (y <= Method_max(y1_1, y1_2)))
+         Console.WriteLine("AB:  A = [" + x11 + ", " + y1_1 + "];  " + "B = [" + x1_2 + ", " + y1_2 + "];  и   CD:  " + "C = [" + x2_1 + ", " + y2_1 + "];  " + "D = [" + x2_2 + ", " + y2_2 + "];  ");
+         if (((x >= Method_min(x11, x1_2)) & (x <= Method_max(x11, x1_2))) & (y >= Method_min(y1_1, y1_2)) & (y <= Method_max(y1_1, y1_2)))
          {
             Console.WriteLine("есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
             if (x > 0 & y > 0) Console.WriteLine(" точка пересечения в 1 четверти");
