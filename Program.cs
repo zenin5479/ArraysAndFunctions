@@ -334,7 +334,6 @@ namespace ArraysAndFunctions
             }
          }
 
-
          Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N. ");
          Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
@@ -582,7 +581,6 @@ namespace ArraysAndFunctions
          b2 = x22 - x21;
          c2 = x21 * y22 - x22 * y21;
 
-
          if ((b1 * a2 - b2 * a1) != 0)
          {
             y = (c2 * a1 - c1 * a2) / (b1 * a2 - b2 * a1);
@@ -592,14 +590,22 @@ namespace ArraysAndFunctions
          double MethodMax(double arg1, double arg2)     // Метод  определения максимального числа из двух
          {
             double result = arg1;
-            if (arg2 > result) result = arg2;
+            if (arg2 > result)
+            {
+               result = arg2;
+            }
+
             return result;
          }
 
          double MethodMin(double arg1, double arg2)     // Метод определения минимального числа из двух
          {
             double result = arg1;
-            if (arg2 < result) result = arg2;
+            if (arg2 < result)
+            {
+               result = arg2;
+            }
+
             return result;
          }
 
@@ -607,15 +613,27 @@ namespace ArraysAndFunctions
          if (((x >= MethodMin(x11, x12)) & (x <= MethodMax(x11, x12))) & (y >= MethodMin(y11, y12)) & (y <= MethodMax(y11, y12)))
          {
             Console.WriteLine("есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
-            if (x > 0 & y > 0) Console.WriteLine(" точка пересечения в 1 четверти");
-            else if (x < 0 & y > 0) Console.WriteLine(" точка пересечения во 2 четверти");
-            else if (x > 0 & y < 0) Console.WriteLine(" точка пересечения в 4 четверти");
+            if (x > 0 & y > 0)
+            {
+               Console.WriteLine(" точка пересечения в 1 четверти");
+            }
+            else if (x < 0 & y > 0)
+            {
+               Console.WriteLine(" точка пересечения во 2 четверти");
+            }
+            else if (x > 0 & y < 0)
+            {
+               Console.WriteLine(" точка пересечения в 4 четверти");
+            }
          }
          else
          {
             Console.WriteLine("точки  пересечения НЕТ ");
          }
-         if (b1 * a2 - b2 * a1 == 0) Console.WriteLine("отрезки параллельны");
+         if (b1 * a2 - b2 * a1 == 0)
+         {
+            Console.WriteLine("отрезки параллельны");
+         }
 
          Console.ReadKey();
       }
