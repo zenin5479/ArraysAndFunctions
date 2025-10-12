@@ -377,24 +377,24 @@ namespace ArraysAndFunctions
 
          int figure = Convert.ToInt32(Console.ReadLine());
 
-         int Inversions(int number1)                // метод для переворачивания целого числа
+         int Inversions(int numeral)                // метод для переворачивания целого числа
          {
-            int i = number1;
-            if (i < 0) number1 = -1 * number1;
-            int number2 = 0;
-            while (number1 > 0)
+            int i = numeral;
+            if (i < 0) numeral = -1 * numeral;
+            int numeralone = 0;
+            while (numeral > 0)
             {
-               int digit = number1 % 10;            // находим остаток - последнюю цифру исходного числа
-               number1 = number1 / 10;              // удаляем последнюю цифру исходного числа (уменьшаем разрядность)
-               number2 = number2 * 10;              // формируем новое  второе число (увеличиваем разрядность)
-               number2 = number2 + digit;           // добавляем цифру в разряд втрого числа
+               int digit = numeral % 10;            // находим остаток - последнюю цифру исходного числа
+               numeral /= 10;              // удаляем последнюю цифру исходного числа (уменьшаем разрядность)
+               numeralone *= 10;              // формируем новое  второе число (увеличиваем разрядность)
+               numeralone += digit;           // добавляем цифру в разряд втрого числа
             }
-            if (i < 0) return number2 = -1 * number2;
-            return number2;
+            if (i < 0) return -1 * numeralone;
+            return numeralone;
          }
 
-         int number2 = Inversions(figure);
-         if (figure == number2) Console.WriteLine("число:  " + figure + "  - является палиндромом");
+         int numeraltwo = Inversions(figure);
+         if (figure == numeraltwo) Console.WriteLine("число:  " + figure + "  - является палиндромом");
          else Console.WriteLine("число:  " + figure + "  - не является палиндромом");
 
 
