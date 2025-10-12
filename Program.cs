@@ -585,14 +585,14 @@ namespace ArraysAndFunctions
             x = (-C1 - B1 * y) / A1;
          }
 
-         double Method_max(double arg1, double arg2)     // Метод  определения максимального числа из двух
+         double MethodMax(double arg1, double arg2)     // Метод  определения максимального числа из двух
          {
             double result = arg1;
             if (arg2 > result) result = arg2;
             return result;
          }
 
-         double Method_min(double arg1, double arg2)     // Метод определения минимального числа из двух
+         double MethodMin(double arg1, double arg2)     // Метод определения минимального числа из двух
          {
             double result = arg1;
             if (arg2 < result) result = arg2;
@@ -600,7 +600,7 @@ namespace ArraysAndFunctions
          }
 
          Console.WriteLine("AB:  A = [" + x11 + ", " + y1_1 + "];  " + "B = [" + x1_2 + ", " + y1_2 + "];  и   CD:  " + "C = [" + x2_1 + ", " + y2_1 + "];  " + "D = [" + x2_2 + ", " + y2_2 + "];  ");
-         if (((x >= Method_min(x11, x1_2)) & (x <= Method_max(x11, x1_2))) & (y >= Method_min(y1_1, y1_2)) & (y <= Method_max(y1_1, y1_2)))
+         if (((x >= MethodMin(x11, x1_2)) & (x <= MethodMax(x11, x1_2))) & (y >= MethodMin(y1_1, y1_2)) & (y <= MethodMax(y1_1, y1_2)))
          {
             Console.WriteLine("есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
             if (x > 0 & y > 0) Console.WriteLine(" точка пересечения в 1 четверти");
