@@ -453,9 +453,7 @@ namespace ArraysAndFunctions
 
          }
 
-
          //------------------------ДОПОЛНИТЕЛЬНЫЕ ЗАДАНИЯ------------------------------------------------------------------------------
-
          Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" Напишите программу, на ввод подается номер четверти . Создаются N случайных точек в этой чеиверти. .");
          Console.WriteLine(" Определитьб оптимальный маршрут торгового представителя, который выезжает из центра координат .");
@@ -489,16 +487,16 @@ namespace ArraysAndFunctions
 
 
          Console.WriteLine("Введите количество точек ");
-         int number_point = Convert.ToInt32(Console.ReadLine());
+         int numberPoint = Convert.ToInt32(Console.ReadLine());
 
 
          //Random rand = new Random();
-         int[] array_X = new int[number_point];                           // инициализация массива всех  точек по х координате
-         int[] array_Y = new int[number_point];                           // инициализация массива всех точек  по Y координате
-         int[] array_X_input = new int[number_point];                     // инициализация массива всех  точек по х координате
-         int[] array_Y_input = new int[number_point];
-         double[] array_Distance = new double[number_point];             // инициализация массива расстояний от центра до каждой точки
-         int Length = array_X.Length;                                      // кол элементов массива (точек)
+         int[] arrayX = new int[numberPoint];                           // инициализация массива всех  точек по х координате
+         int[] array_Y = new int[numberPoint];                           // инициализация массива всех точек  по Y координате
+         int[] array_X_input = new int[numberPoint];                     // инициализация массива всех  точек по х координате
+         int[] array_Y_input = new int[numberPoint];
+         double[] array_Distance = new double[numberPoint];             // инициализация массива расстояний от центра до каждой точки
+         int Length = arrayX.Length;                                      // кол элементов массива (точек)
 
          void Method_FillArray(int[] array, int Mult)                     // Метод (процедура) Method_FillArray для  заполнения массива случайными заданной четверти
          {
@@ -511,19 +509,19 @@ namespace ArraysAndFunctions
             }
          }
 
-         Method_FillArray(array_X, xMult);                                // заполнение массива координатами Х соответствующей четверти
+         Method_FillArray(arrayX, xMult);                                // заполнение массива координатами Х соответствующей четверти
          Method_FillArray(array_Y, yMult);                                // заполнение массива координатами Y соответствующей четверти
 
          for (int mx = 0; mx < Length; mx++)                                       // массив для вывода первоначальных значений точек
          {
-            array_X_input[mx] = array_X[mx];
+            array_X_input[mx] = arrayX[mx];
             array_Y_input[mx] = array_Y[mx];
          }
 
          int index = 0;
          while (index < Length)                                             // заполнение массива расстояние от центра до каждой точки
          {
-            array_Distance[index] = Math.Sqrt(array_X[index] * array_X[index] + array_Y[index] * array_Y[index]);
+            array_Distance[index] = Math.Sqrt(arrayX[index] * arrayX[index] + array_Y[index] * array_Y[index]);
             index++;
          }
 
@@ -534,13 +532,13 @@ namespace ArraysAndFunctions
                if (array_Distance[j] > array_Distance[j + 1])
                {
                   double t_D = array_Distance[j + 1];
-                  int t_X = array_X[j + 1];
+                  int t_X = arrayX[j + 1];
                   int t_Y = array_Y[j + 1];
                   array_Distance[j + 1] = array_Distance[j];
-                  array_X[j + 1] = array_X[j];
+                  arrayX[j + 1] = arrayX[j];
                   array_Y[j + 1] = array_Y[j];
                   array_Distance[j] = t_D;
-                  array_X[j] = t_X;
+                  arrayX[j] = t_X;
                   array_Y[j] = t_Y;
                }
             }
@@ -551,7 +549,7 @@ namespace ArraysAndFunctions
          index = 0;
          while (index < Length)
          {
-            Console.WriteLine("|   " + index + "  |  [" + array_X_input[index] + "; " + array_Y_input[index] + "]   " + "|  [" + array_X[index] + "; " + array_Y[index] + "]" + " = " + array_Distance[index] + "|");
+            Console.WriteLine("|   " + index + "  |  [" + array_X_input[index] + "; " + array_Y_input[index] + "]   " + "|  [" + arrayX[index] + "; " + array_Y[index] + "]" + " = " + array_Distance[index] + "|");
             index++;
          }
 
