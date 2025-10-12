@@ -568,21 +568,21 @@ namespace ArraysAndFunctions
          double x22 = rnd1.Next(-5, 5);
          double y22 = rnd1.Next(-5, 5);
 
-         double A1, A2, B1, B2, C1, C2;
+         double a1, a2, b1, b2, c1, c2;
          double y = 0, x = 0;
 
-         A1 = y11 - y12;
-         B1 = x12 - x11;
-         C1 = x11 * y12 - x12 * y11;
-         A2 = y21 - y22;
-         B2 = x22 - x21;
-         C2 = x21 * y22 - x22 * y21;
+         a1 = y11 - y12;
+         b1 = x12 - x11;
+         c1 = x11 * y12 - x12 * y11;
+         a2 = y21 - y22;
+         b2 = x22 - x21;
+         c2 = x21 * y22 - x22 * y21;
 
 
-         if ((B1 * A2 - B2 * A1) != 0)
+         if ((b1 * a2 - b2 * a1) != 0)
          {
-            y = (C2 * A1 - C1 * A2) / (B1 * A2 - B2 * A1);
-            x = (-C1 - B1 * y) / A1;
+            y = (c2 * a1 - c1 * a2) / (b1 * a2 - b2 * a1);
+            x = (-c1 - b1 * y) / a1;
          }
 
          double MethodMax(double arg1, double arg2)     // Метод  определения максимального числа из двух
@@ -611,7 +611,7 @@ namespace ArraysAndFunctions
          {
             Console.WriteLine("точки  пересечения НЕТ ");
          }
-         if (B1 * A2 - B2 * A1 == 0) Console.WriteLine("отрезки параллельны");
+         if (b1 * a2 - b2 * a1 == 0) Console.WriteLine("отрезки параллельны");
 
          Console.ReadKey();
       }
