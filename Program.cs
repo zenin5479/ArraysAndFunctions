@@ -338,7 +338,6 @@ namespace ArraysAndFunctions
          Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N. ");
          Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
-
          Random randomized = new Random();
          int v = randomized.Next(1, 20);
          Console.WriteLine("_________________________________");
@@ -357,7 +356,6 @@ namespace ArraysAndFunctions
          Console.WriteLine(" ----------------------------------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
          Console.WriteLine(" ----------------------------------------------------------------------------------------------------------------------- ");
-
          int aX = randomized.Next(-5, 5);
          int aY = randomized.Next(-5, 5);
          int aZ = randomized.Next(-5, 5);
@@ -398,24 +396,23 @@ namespace ArraysAndFunctions
          Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
          Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
          Console.WriteLine("Введите данные");
-
          string str = Console.ReadLine();
-         void Perenert1(string str1)                // метод для переворачивания целого числа
+         void PerenertOne(string str1)                // метод для переворачивания целого числа
          {
-            int L = str1.Length;
-            char[] str1_C = str1.ToCharArray();
-            char[] str2_C = new char[L];
-            int i2 = L;
-            for (int i1 = 0; i1 < L; i1++)
+            int l = str1.Length;
+            char[] str1C = str1.ToCharArray();
+            char[] str2C = new char[l];
+            int i2 = l;
+            for (int i1 = 0; i1 < l; i1++)
             {
                i2 = i2 - 1;
-               str2_C[i2] = str1_C[i1];
-               Console.WriteLine("str_C[" + i1 + "] = " + str1[i1] + "    str_C[" + i2 + "] = " + str2_C[i2]);
+               str2C[i2] = str1C[i1];
+               Console.WriteLine("str_C[" + i1 + "] = " + str1[i1] + "    str_C[" + i2 + "] = " + str2C[i2]);
             }
             int count = 0;
-            for (int i3 = 0; i3 < L; i3++)
+            for (int i3 = 0; i3 < l; i3++)
             {
-               if (str2_C[i3] == str1_C[i3])
+               if (str2C[i3] == str1C[i3])
                {
                   count++;
                }
@@ -425,7 +422,7 @@ namespace ArraysAndFunctions
             //i2 = i2--;
             //Console.WriteLine("число:  "+ str1_C[i1] + str2_C[i2]);
             //}
-            if (count == L)
+            if (count == l)
             {
                Console.WriteLine("запись:  " + str1 + "  - является палиндромом");
             }
@@ -435,7 +432,7 @@ namespace ArraysAndFunctions
             }
          }
 
-         Perenert1(str);
+         PerenertOne(str);
 
          Console.WriteLine(" ---------------------вариант с форматом строка (более универсальный)------------------------------------ ");
          Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
