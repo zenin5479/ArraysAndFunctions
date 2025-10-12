@@ -560,23 +560,23 @@ namespace ArraysAndFunctions
 
          Random rnd1 = new Random();
          double x11 = rnd1.Next(-5, 5);
-         double y1_1 = rnd1.Next(-5, 5);
-         double x1_2 = rnd1.Next(-5, 5);
-         double y1_2 = rnd1.Next(-5, 5);
-         double x2_1 = rnd1.Next(-5, 5);
-         double y2_1 = rnd1.Next(-5, 5);
-         double x2_2 = rnd1.Next(-5, 5);
-         double y2_2 = rnd1.Next(-5, 5);
+         double y11 = rnd1.Next(-5, 5);
+         double x12 = rnd1.Next(-5, 5);
+         double y12 = rnd1.Next(-5, 5);
+         double x21 = rnd1.Next(-5, 5);
+         double y21 = rnd1.Next(-5, 5);
+         double x22 = rnd1.Next(-5, 5);
+         double y22 = rnd1.Next(-5, 5);
 
          double A1, A2, B1, B2, C1, C2;
          double y = 0, x = 0;
 
-         A1 = y1_1 - y1_2;
-         B1 = x1_2 - x11;
-         C1 = x11 * y1_2 - x1_2 * y1_1;
-         A2 = y2_1 - y2_2;
-         B2 = x2_2 - x2_1;
-         C2 = x2_1 * y2_2 - x2_2 * y2_1;
+         A1 = y11 - y12;
+         B1 = x12 - x11;
+         C1 = x11 * y12 - x12 * y11;
+         A2 = y21 - y22;
+         B2 = x22 - x21;
+         C2 = x21 * y22 - x22 * y21;
 
 
          if ((B1 * A2 - B2 * A1) != 0)
@@ -599,8 +599,8 @@ namespace ArraysAndFunctions
             return result;
          }
 
-         Console.WriteLine("AB:  A = [" + x11 + ", " + y1_1 + "];  " + "B = [" + x1_2 + ", " + y1_2 + "];  и   CD:  " + "C = [" + x2_1 + ", " + y2_1 + "];  " + "D = [" + x2_2 + ", " + y2_2 + "];  ");
-         if (((x >= MethodMin(x11, x1_2)) & (x <= MethodMax(x11, x1_2))) & (y >= MethodMin(y1_1, y1_2)) & (y <= MethodMax(y1_1, y1_2)))
+         Console.WriteLine("AB:  A = [" + x11 + ", " + y11 + "];  " + "B = [" + x12 + ", " + y12 + "];  и   CD:  " + "C = [" + x21 + ", " + y21 + "];  " + "D = [" + x22 + ", " + y22 + "];  ");
+         if (((x >= MethodMin(x11, x12)) & (x <= MethodMax(x11, x12))) & (y >= MethodMin(y11, y12)) & (y <= MethodMax(y11, y12)))
          {
             Console.WriteLine("есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
             if (x > 0 & y > 0) Console.WriteLine(" точка пересечения в 1 четверти");
