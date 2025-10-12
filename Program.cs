@@ -498,19 +498,19 @@ namespace ArraysAndFunctions
          double[] arrayDistance = new double[numberPoint];             // инициализация массива расстояний от центра до каждой точки
          int length = arrayX.Length;                                      // кол элементов массива (точек)
 
-         void Method_FillArray(int[] array, int Mult)                     // Метод (процедура) Method_FillArray для  заполнения массива случайными заданной четверти
+         void MethodFillArray(int[] array, int mult)                     // Метод (процедура) Method_FillArray для  заполнения массива случайными заданной четверти
          {
-            int Length = array.Length;
+            int lengt = array.Length;
             int index1 = 0;
-            while (index1 < Length)
+            while (index1 < lengt)
             {
-               array[index1] = Mult * new Random().Next(1, 10);
+               array[index1] = mult * new Random().Next(1, 10);
                index1++;
             }
          }
 
-         Method_FillArray(arrayX, xMult);                                // заполнение массива координатами Х соответствующей четверти
-         Method_FillArray(arrayY, yMult);                                // заполнение массива координатами Y соответствующей четверти
+         MethodFillArray(arrayX, xMult);                                // заполнение массива координатами Х соответствующей четверти
+         MethodFillArray(arrayY, yMult);                                // заполнение массива координатами Y соответствующей четверти
 
          for (int mx = 0; mx < length; mx++)                                       // массив для вывода первоначальных значений точек
          {
