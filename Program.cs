@@ -404,7 +404,6 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите данные");
 
          string str = Console.ReadLine();
-
          void Perenert1(string str1)                // метод для переворачивания целого числа
          {
             int L = str1.Length;
@@ -415,18 +414,29 @@ namespace ArraysAndFunctions
             {
                i2 = i2 - 1;
                str2_C[i2] = str1_C[i1];
-               //Console.WriteLine("str_C["+i1+"] = " + str1[i1] + "    str_C["+i2+"] = " + str2_C[i2]);
+               Console.WriteLine("str_C[" + i1 + "] = " + str1[i1] + "    str_C[" + i2 + "] = " + str2_C[i2]);
             }
             int count = 0;
             for (int i3 = 0; i3 < L; i3++)
-            { if (str2_C[i3] == str1_C[i3]) count++; }
+            {
+               if (str2_C[i3] == str1_C[i3])
+               {
+                  count++;
+               }
+            }
 
             //str2_C[i2] = str1_C[i1];
             //i2 = i2--;
             //Console.WriteLine("число:  "+ str1_C[i1] + str2_C[i2]);
             //}
-            if (count == L) Console.WriteLine("запись:  " + str1 + "  - является палиндромом");
-            else Console.WriteLine("запись:  " + str1 + "  - не является палиндромом");
+            if (count == L)
+            {
+               Console.WriteLine("запись:  " + str1 + "  - является палиндромом");
+            }
+            else
+            {
+               Console.WriteLine("запись:  " + str1 + "  - не является палиндромом");
+            }
          }
 
          Perenert1(str);
