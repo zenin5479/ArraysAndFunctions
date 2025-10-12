@@ -253,10 +253,17 @@ namespace ArraysAndFunctions
          {
             int age = 0;
             if (yeartoday > yearbirth)
+            {
                if ((monthtoday < monthbirth) & (daytoday < daybirth))
+               {
                   age = yeartoday - yearbirth - 1;
+               }
                else
+               {
                   age = yeartoday - yearbirth;
+               }
+            }
+
             Console.WriteLine("Возраст (количество полных лет) = " + age);
          }
 
