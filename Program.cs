@@ -370,13 +370,10 @@ namespace ArraysAndFunctions
          Console.WriteLine("т. B -  [" + bX + ", " + bY + ", " + bZ + "]");
          Console.WriteLine("длина отрезка AB в 3D = " + Math.Sqrt((aX - bX) * (aX - bX) + (aY - bY) * (aY - bY) + (aZ - bZ) * (aZ - bZ)));
 
-
          Console.WriteLine(" ---------------------вариант с числовым форматом-------------------------------------------------------- ");
          Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
          Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
-
          int figure = Convert.ToInt32(Console.ReadLine());
-
          int Inversions(int numeral)                // метод для переворачивания целого числа
          {
             int i = numeral;
@@ -396,7 +393,6 @@ namespace ArraysAndFunctions
          int numeraltwo = Inversions(figure);
          if (figure == numeraltwo) Console.WriteLine("число:  " + figure + "  - является палиндромом");
          else Console.WriteLine("число:  " + figure + "  - не является палиндромом");
-
 
          Console.WriteLine(" ---------------------вариант с форматом строка (более универсальный)------------------------------------ ");
          Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
