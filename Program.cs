@@ -106,7 +106,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("-------------------");
          Console.WriteLine("Проверка дня недели");
          Console.WriteLine("-------------------");
-         Console.Write("Введите порядковый номер недели от 1 до 7: ");
+         Console.Write("Введите порядковый номер дня недели от 1 до 7: ");
          int issue = Convert.ToInt32(Console.ReadLine());
          string ss;
          // Метод определения является день недели ли выходным или нет
