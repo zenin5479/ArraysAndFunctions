@@ -20,7 +20,7 @@ namespace ArraysAndFunctions
    {
       static void Main(string[] args)
       {
-         Console.WriteLine("---------------------------------------------------------------------------------------");
+         Console.WriteLine("------------------");
          Console.WriteLine("Перевёрнутое число");
          Console.WriteLine("---------------------------------------------------------------------------------------");
          Console.Write("Введите целое число: ");
