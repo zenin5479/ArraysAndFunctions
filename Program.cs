@@ -202,7 +202,7 @@ namespace ArraysAndFunctions
 
          Console.WriteLine("-----------------------------");
          Console.WriteLine("Определение возраста человека");
-         Console.WriteLine("---------------------------------------------------------");
+         Console.WriteLine("-----------------------------");
          // Метод проверки правильности ввода месяца
          int InputMonth(int month)
          {
@@ -211,6 +211,7 @@ namespace ArraysAndFunctions
                Console.WriteLine("Введите корректный месяц: ");
                month = Convert.ToInt32(Console.ReadLine());
             }
+
             return month;
          }
 
@@ -222,6 +223,7 @@ namespace ArraysAndFunctions
                Console.WriteLine("Введите корректную дату: ");
                day = Convert.ToInt32(Console.ReadLine());
             }
+
             return day;
          }
 
