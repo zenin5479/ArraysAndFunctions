@@ -295,6 +295,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("------------------------------------------------------------------------------------------------");
          Console.WriteLine("Определение расположения максимальной и минимальной цифр в натуральном числе с разными цифрами: ");
          Console.WriteLine("------------------------------------------------------------------------------------------------");
+         Console.Write("Введите натуральное число с разными цифрами: ");
          int naturalnumber;
          bool flag = int.TryParse(Console.ReadLine(), out naturalnumber);
          string line = naturalnumber.ToString();
