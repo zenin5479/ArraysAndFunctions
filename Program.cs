@@ -50,7 +50,7 @@ namespace ArraysAndFunctions
 
          Console.WriteLine("------------------------------");
          Console.WriteLine("Проверка наличия цыфры в числе");
-         Console.WriteLine("---------------------------------------------------------------------------------");
+         Console.WriteLine("------------------------------");
          Console.Write("Введите целое число: ");
          int item = Convert.ToInt32(Console.ReadLine());
          if (item == 0)
