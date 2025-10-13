@@ -22,7 +22,7 @@ namespace ArraysAndFunctions
       {
          Console.WriteLine("------------------");
          Console.WriteLine("Перевёрнутое число");
-         Console.WriteLine("---------------------------------------------------------------------------------------");
+         Console.WriteLine("------------------");
          Console.Write("Введите целое число: ");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод для переворачивания целого числа
