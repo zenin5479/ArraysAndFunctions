@@ -177,7 +177,7 @@ namespace ArraysAndFunctions
          Console.WriteLine(issue + " - " + Week(issue) + Weekend(issue));
 
          Console.WriteLine("--------------------------------------------------------------");
-         Console.WriteLine("Проверка на равнобедренность треугольника со сторонами a, b, c");
+         Console.WriteLine("Проверка равнобедренности треугольника со сторонами a, b, c");
          Console.WriteLine("------------------------------------------------------------------------------------------");
          Console.Write("Введите сторону a треугольника: ");
          int a = Convert.ToInt32(Console.ReadLine());
