@@ -268,9 +268,9 @@ namespace ArraysAndFunctions
 
          InputAge(yearone, yeartwo, monthone, monthtwo, dayone, daytwo);
 
-         Console.WriteLine("------------------------------------------");
-         Console.WriteLine("Определение размера депозита через n месяцев");
-         Console.WriteLine(" -----------------------------------------");
+         Console.WriteLine("--------------------------------------------");
+         Console.WriteLine("Определение размера депозита через N месяцев");
+         Console.WriteLine("--------------------------------------------");
          Console.Write("Введите количество месяцев: ");
          int period = Convert.ToInt32(Console.ReadLine());
          double deposit = 1000;
