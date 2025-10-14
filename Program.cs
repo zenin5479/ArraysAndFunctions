@@ -159,7 +159,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите номер четверти");
          int numberChetv = Convert.ToInt32(Console.ReadLine());
          // Расчета мультипликатора для задания точек для определенной четверти
-         int xMult = 0; int yMult = 0;
+         int xMult; int yMult;
          if (numberChetv == 1)
          {
             xMult = 1; yMult = 1;
@@ -182,7 +182,7 @@ namespace ArraysAndFunctions
             goto found;
          }
 
-         Console.WriteLine("Введите количество точек ");
+         Console.WriteLine("Введите количество точек: ");
          int numberPoint = Convert.ToInt32(Console.ReadLine());
          //Random rand = new Random();
          int[] arrayX = new int[numberPoint];                           // инициализация массива всех  точек по х координате
