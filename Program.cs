@@ -45,12 +45,13 @@ namespace ArraysAndFunctions
          int bY = randomized.Next(-5, 5);
          int bZ = randomized.Next(-5, 5);
 
-         // формула длина отрезка 3D = SQRT((aX-bX)^2 + (aY-bY)^2 + (aZ-bZ)^2 )
-         Console.WriteLine("т. А -  [" + aX + ", " + aY + ", " + aZ + "]");
-         Console.WriteLine("т. B -  [" + bX + ", " + bY + ", " + bZ + "]");
-         Console.WriteLine("длина отрезка AB в 3D = " + Math.Sqrt((aX - bX) * (aX - bX) + (aY - bY) * (aY - bY) + (aZ - bZ) * (aZ - bZ)));
+         // Формула длины отрезка 3D = SQRT((aX-bX)^2 + (aY-bY)^2 + (aZ-bZ)^2 )
+         Console.WriteLine("Точка А -  [" + aX + ", " + aY + ", " + aZ + "]");
+         Console.WriteLine("Точка B -  [" + bX + ", " + bY + ", " + bZ + "]");
+         Console.WriteLine("Длина отрезка AB в 3D = " + Math.Sqrt((aX - bX) * (aX - bX) + (aY - bY) * (aY - bY) + (aZ - bZ) * (aZ - bZ)));
 
-         Console.WriteLine(" ---------------------вариант с числовым форматом-------------------------------------------------------- ");
+         
+         Console.WriteLine("Вариант с числовым форматом");
          Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
          Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
          int figure = Convert.ToInt32(Console.ReadLine());
