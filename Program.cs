@@ -50,10 +50,11 @@ namespace ArraysAndFunctions
          Console.WriteLine("Точка B -  [" + bX + ", " + bY + ", " + bZ + "]");
          Console.WriteLine("Длина отрезка AB в 3D = " + Math.Sqrt((aX - bX) * (aX - bX) + (aY - bY) * (aY - bY) + (aZ - bZ) * (aZ - bZ)));
 
-         
+         Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Проверка пятизначного числа на палиндромность");
+         Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Вариант с числовым форматом");
-         Console.WriteLine("-------------------------------------------------------------------------------------------------------- ");
+         Console.WriteLine("---------------------------");
          int figure = Convert.ToInt32(Console.ReadLine());
          int Inversions(int numeral)                // метод для переворачивания целого числа
          {
