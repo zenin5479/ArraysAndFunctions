@@ -36,12 +36,12 @@ namespace ArraysAndFunctions
          Console.WriteLine("-----------------------------------------------------------");
          Console.WriteLine("Нахождение расстояния между двумя точками в 3D пространстве");
          Console.WriteLine("-----------------------------------------------------------");
-         int aX = randomized.Next(-5, 5);
-         int aY = randomized.Next(-5, 5);
-         int aZ = randomized.Next(-5, 5);
-         int bX = randomized.Next(-5, 5);
-         int bY = randomized.Next(-5, 5);
-         int bZ = randomized.Next(-5, 5);
+         int aX = randomized.Next(-10, 10);
+         int aY = randomized.Next(-10, 10);
+         int aZ = randomized.Next(-10, 10);
+         int bX = randomized.Next(-10, 10);
+         int bY = randomized.Next(-10, 10);
+         int bZ = randomized.Next(-10, 10);
 
          // Формула длины отрезка 3D = SQRT((aX-bX)^2 + (aY-bY)^2 + (aZ-bZ)^2 )
          Console.WriteLine("Точка А -  [" + aX + ", " + aY + ", " + aZ + "]");
@@ -54,8 +54,8 @@ namespace ArraysAndFunctions
          Console.WriteLine("Вариант с числовым форматом");
          Console.WriteLine("---------------------------");
          int figure = Convert.ToInt32(Console.ReadLine());
-          // Метод для переворачивания целого числа
-         int Inversions(int numeral)               
+         // Метод для переворачивания целого числа
+         int Inversions(int numeral)
          {
             int i = numeral;
             if (i < 0)
@@ -66,15 +66,16 @@ namespace ArraysAndFunctions
             int numeralone = 0;
             while (numeral > 0)
             {
-                // Находим остаток - последнюю цифру исходного числа
+               // Находим остаток - последнюю цифру исходного числа
                int digit = numeral % 10;
                // Удаляем последнюю цифру исходного числа (уменьшаем разрядность)
-               numeral /= 10; 
+               numeral /= 10;
                // Формируем новое  второе число (увеличиваем разрядность)
-               numeralone *= 10; 
-                // Добавляем цифру в разряд втрого числа
-               numeralone += digit;          
+               numeralone *= 10;
+               // Добавляем цифру в разряд втрого числа
+               numeralone += digit;
             }
+
             if (i < 0)
             {
                return -1 * numeralone;
@@ -84,8 +85,8 @@ namespace ArraysAndFunctions
          }
 
          int numeraltwo = Inversions(figure);
-         if (figure == numeraltwo) Console.WriteLine("число:  " + figure + "  - является палиндромом");
-         else Console.WriteLine("число:  " + figure + "  - не является палиндромом");
+         if (figure == numeraltwo) Console.WriteLine("Число: " + figure + " - является палиндромом");
+         else Console.WriteLine("Число: " + figure + " - не является палиндромом");
 
          Console.WriteLine(" ---------------------вариант с форматом строка (более универсальный)------------------------------------ ");
          Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
