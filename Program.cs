@@ -92,8 +92,8 @@ namespace ArraysAndFunctions
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Проверка пятизначного числа на палиндромность");
          Console.WriteLine("---------------------------------------------");
-         Console.WriteLine("Вариант с форматом строка (более универсальный)");
-         Console.WriteLine("-----------------------------------------------");
+         Console.WriteLine("Вариант 1 с форматом строка");
+         Console.WriteLine("---------------------------");
          Console.WriteLine("Введите данные");
          string str = Console.ReadLine();
          // Метод для переворачивания строки
@@ -121,19 +121,21 @@ namespace ArraysAndFunctions
 
             if (count == l)
             {
-               Console.WriteLine("запись:  " + str1 + "  - является палиндромом");
+               Console.WriteLine("Запись: " + str1 + " - является палиндромом");
             }
             else
             {
-               Console.WriteLine("запись:  " + str1 + "  - не является палиндромом");
+               Console.WriteLine("Запись: " + str1 + " - не является палиндромом");
             }
          }
 
          PerenertOne(str);
 
-         Console.WriteLine(" ---------------------вариант с форматом строка (более универсальный)------------------------------------ ");
-         Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
-         Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
+         Console.WriteLine("---------------------------------------------");
+         Console.WriteLine("Проверка пятизначного числа на палиндромность");
+         Console.WriteLine("---------------------------------------------");
+         Console.WriteLine("Вариант 2 с форматом строка");
+         Console.WriteLine("---------------------------");
          Console.WriteLine("Введите данные");
          string num1 = Console.ReadLine();
          Palindrom(num1);
