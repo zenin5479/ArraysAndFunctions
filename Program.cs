@@ -25,9 +25,9 @@ namespace ArraysAndFunctions
          Console.WriteLine("-----------------------------");
          Random randomized = new Random();
          int v = randomized.Next(1, 20);
-         Console.WriteLine("_________________________________");
+         Console.WriteLine("___________________");
          Console.WriteLine("Таблица кубов чисел");
-         Console.WriteLine("_________________________________");
+         Console.WriteLine("___________________");
          Console.WriteLine("");
          Console.WriteLine("N = " + v);
          Console.WriteLine("");
