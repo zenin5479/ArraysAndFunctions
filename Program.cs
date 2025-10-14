@@ -105,9 +105,8 @@ namespace ArraysAndFunctions
             int i2 = l;
             for (int i1 = 0; i1 < l; i1++)
             {
-               i2 = i2 - 1;
+               i2 -= 1;
                str2C[i2] = str1C[i1];
-               Console.WriteLine("str_C[" + i1 + "] = " + str1[i1] + "    str_C[" + i2 + "] = " + str2C[i2]);
             }
 
             int count = 0;
@@ -184,21 +183,20 @@ namespace ArraysAndFunctions
 
          Console.WriteLine("Введите количество точек: ");
          int numberPoint = Convert.ToInt32(Console.ReadLine());
-         //Random rand = new Random();
+         Random rand = new Random();
          int[] arrayX = new int[numberPoint];                           // инициализация массива всех  точек по х координате
          int[] arrayY = new int[numberPoint];                           // инициализация массива всех точек  по Y координате
          int[] arrayXInput = new int[numberPoint];                     // инициализация массива всех  точек по х координате
          int[] arrayYInput = new int[numberPoint];
          double[] arrayDistance = new double[numberPoint];             // инициализация массива расстояний от центра до каждой точки
-         int length = arrayX.Length;                                      // кол элементов массива (точек)
-
+         int length = arrayX.Length;                                     // кол элементов массива (точек)
          void MethodFillArray(int[] array, int mult)                     // Метод (процедура) Method_FillArray для  заполнения массива случайными заданной четверти
          {
             int lengt = array.Length;
             int index1 = 0;
             while (index1 < lengt)
             {
-               array[index1] = mult * new Random().Next(1, 10);
+               array[index1] = mult * rand.Next(1, 10);
                index1++;
             }
          }
