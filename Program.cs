@@ -53,6 +53,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Вариант с числовым форматом");
          Console.WriteLine("---------------------------");
+         Console.WriteLine("Введите данные");
          int figure = Convert.ToInt32(Console.ReadLine());
          // Метод для переворачивания целого числа
          int Inversions(int numeral)
@@ -88,12 +89,15 @@ namespace ArraysAndFunctions
          if (figure == numeraltwo) Console.WriteLine("Число: " + figure + " - является палиндромом");
          else Console.WriteLine("Число: " + figure + " - не является палиндромом");
 
-         Console.WriteLine(" ---------------------вариант с форматом строка (более универсальный)------------------------------------ ");
-         Console.WriteLine(" Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
-         Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
+         Console.WriteLine("---------------------------------------------");
+         Console.WriteLine("Проверка пятизначного числа на палиндромность");
+         Console.WriteLine("---------------------------------------------");
+         Console.WriteLine("Вариант с форматом строка (более универсальный)");
+         Console.WriteLine("-----------------------------------------------");
          Console.WriteLine("Введите данные");
          string str = Console.ReadLine();
-         void PerenertOne(string str1)                // метод для переворачивания целого числа
+         // Метод для переворачивания строки
+         void PerenertOne(string str1)                
          {
             int l = str1.Length;
             char[] str1C = str1.ToCharArray();
@@ -105,6 +109,7 @@ namespace ArraysAndFunctions
                str2C[i2] = str1C[i1];
                Console.WriteLine("str_C[" + i1 + "] = " + str1[i1] + "    str_C[" + i2 + "] = " + str2C[i2]);
             }
+            
             int count = 0;
             for (int i3 = 0; i3 < l; i3++)
             {
@@ -114,10 +119,6 @@ namespace ArraysAndFunctions
                }
             }
 
-            //str2_C[i2] = str1_C[i1];
-            //i2 = i2--;
-            //Console.WriteLine("число:  "+ str1_C[i1] + str2_C[i2]);
-            //}
             if (count == l)
             {
                Console.WriteLine("запись:  " + str1 + "  - является палиндромом");
