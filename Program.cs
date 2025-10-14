@@ -33,16 +33,11 @@ namespace ArraysAndFunctions
          int w = 1;
          while (w <= v)
          {
-            
+
             string text = "--------+--------\n";
             text = text + "|  " + w + "\t|  " + w * w * w + "\t|";
             Console.WriteLine(text);
             w++;
-         }
-
-         for ( )
-         {
-            
          }
 
          Console.WriteLine("-----------------------------------------------------------");
