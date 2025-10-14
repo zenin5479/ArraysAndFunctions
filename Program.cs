@@ -30,11 +30,19 @@ namespace ArraysAndFunctions
          Random randomized = new Random();
          int v = randomized.Next(1, 20);
          Console.WriteLine("N = " + v);
-         for (int i = 1; i <= v; i++)
+         int w = 1;
+         while (w <= v)
          {
+            
             string text = "--------+--------\n";
-            text = text + "|  " + i + "\t|  " + i * i * i + "\t|";
+            text = text + "|  " + w + "\t|  " + w * w * w + "\t|";
             Console.WriteLine(text);
+            w++;
+         }
+
+         for ( )
+         {
+            
          }
 
          Console.WriteLine("-----------------------------------------------------------");
