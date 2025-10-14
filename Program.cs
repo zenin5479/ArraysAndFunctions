@@ -35,9 +35,9 @@ namespace ArraysAndFunctions
             Console.WriteLine(text);
          }
 
-         Console.WriteLine("------------------------------------------------------------");
+         Console.WriteLine("-----------------------------------------------------------");
          Console.WriteLine("Нахождение расстояния между двумя точками в 3D пространстве");
-         Console.WriteLine(" ----------------------------------------------------------------------------------------------------------------------- ");
+         Console.WriteLine("-----------------------------------------------------------");
          int aX = randomized.Next(-5, 5);
          int aY = randomized.Next(-5, 5);
          int aZ = randomized.Next(-5, 5);
