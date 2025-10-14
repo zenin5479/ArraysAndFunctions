@@ -25,9 +25,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("-----------------------------");
          Random randomized = new Random(); //
          int v = randomized.Next(1, 20);
-         Console.WriteLine("");
          Console.WriteLine("N = " + v);
-         Console.WriteLine("");
          for (int i = 1; i <= v; i++)
          {
             string text = "--------+--------\n";
@@ -56,7 +54,8 @@ namespace ArraysAndFunctions
          Console.WriteLine("Вариант с числовым форматом");
          Console.WriteLine("---------------------------");
          int figure = Convert.ToInt32(Console.ReadLine());
-         int Inversions(int numeral)                // метод для переворачивания целого числа
+          // Метод для переворачивания целого числа
+         int Inversions(int numeral)               
          {
             int i = numeral;
             if (i < 0)
@@ -67,10 +66,14 @@ namespace ArraysAndFunctions
             int numeralone = 0;
             while (numeral > 0)
             {
-               int digit = numeral % 10;            // находим остаток - последнюю цифру исходного числа
-               numeral /= 10;              // удаляем последнюю цифру исходного числа (уменьшаем разрядность)
-               numeralone *= 10;              // формируем новое  второе число (увеличиваем разрядность)
-               numeralone += digit;           // добавляем цифру в разряд втрого числа
+                // Находим остаток - последнюю цифру исходного числа
+               int digit = numeral % 10;
+               // Удаляем последнюю цифру исходного числа (уменьшаем разрядность)
+               numeral /= 10; 
+               // Формируем новое  второе число (увеличиваем разрядность)
+               numeralone *= 10; 
+                // Добавляем цифру в разряд втрого числа
+               numeralone += digit;          
             }
             if (i < 0)
             {
