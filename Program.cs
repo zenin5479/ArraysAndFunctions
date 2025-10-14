@@ -302,27 +302,27 @@ namespace ArraysAndFunctions
          Console.WriteLine("AB:  A = [" + x11 + ", " + y11 + "];  " + "B = [" + x12 + ", " + y12 + "];  и   CD:  " + "C = [" + x21 + ", " + y21 + "];  " + "D = [" + x22 + ", " + y22 + "];  ");
          if (((x >= MethodMin(x11, x12)) & (x <= MethodMax(x11, x12))) & (y >= MethodMin(y11, y12)) & (y <= MethodMax(y11, y12)))
          {
-            Console.WriteLine("есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
+            Console.WriteLine("Есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
             if (x > 0 & y > 0)
             {
-               Console.WriteLine(" точка пересечения в 1 четверти");
+               Console.WriteLine("Точка пересечения в 1 четверти");
             }
             else if (x < 0 & y > 0)
             {
-               Console.WriteLine(" точка пересечения во 2 четверти");
+               Console.WriteLine("Точка пересечения во 2 четверти");
             }
             else if (x > 0 & y < 0)
             {
-               Console.WriteLine(" точка пересечения в 4 четверти");
+               Console.WriteLine("Точка пересечения в 4 четверти");
             }
          }
          else
          {
-            Console.WriteLine("точки  пересечения НЕТ ");
+            Console.WriteLine("Точки пересечения нет");
          }
          if (b1 * a2 - b2 * a1 == 0)
          {
-            Console.WriteLine("отрезки параллельны");
+            Console.WriteLine("Отрезки параллельны");
          }
 
          Console.ReadKey();
