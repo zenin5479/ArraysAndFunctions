@@ -97,7 +97,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите данные");
          string str = Console.ReadLine();
          // Метод для переворачивания строки
-         void PerenertOne(string str1)                
+         void InversionsString(string str1)
          {
             int l = str1.Length;
             char[] str1C = str1.ToCharArray();
@@ -109,7 +109,7 @@ namespace ArraysAndFunctions
                str2C[i2] = str1C[i1];
                Console.WriteLine("str_C[" + i1 + "] = " + str1[i1] + "    str_C[" + i2 + "] = " + str2C[i2]);
             }
-            
+
             int count = 0;
             for (int i3 = 0; i3 < l; i3++)
             {
@@ -129,7 +129,7 @@ namespace ArraysAndFunctions
             }
          }
 
-         PerenertOne(str);
+         InversionsString(str);
 
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Проверка пятизначного числа на палиндромность");
@@ -154,7 +154,7 @@ namespace ArraysAndFunctions
 
          Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" Напишите программу, на ввод подается номер четверти . Создаются N случайных точек в этой чеиверти. .");
-         Console.WriteLine(" Определитьб оптимальный маршрут торгового представителя, который выезжает из центра координат .");
+         Console.WriteLine(" Определить оптимальный маршрут торгового представителя, который выезжает из центра координат .");
          Console.WriteLine(" -------------------------------------------------------------------------------------------------------- ");
       found:
          Console.WriteLine("Введите номер четверти");
