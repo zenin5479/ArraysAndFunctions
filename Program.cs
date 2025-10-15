@@ -160,7 +160,6 @@ namespace ArraysAndFunctions
          Console.WriteLine("--------------------------------------------------------------------------------------------");
          Console.WriteLine("Определить оптимальный маршрут торгового представителя, который выезжает из центра координат");
          Console.WriteLine("--------------------------------------------------------------------------------------------");
-
          Console.WriteLine("Введите номер четверти: ");
          int numberChetv = Convert.ToInt32(Console.ReadLine());
          bool selector = true;
@@ -190,7 +189,7 @@ namespace ArraysAndFunctions
             }
             else
             {
-               Console.WriteLine("Введите правильный номер четверти");
+               Console.WriteLine("Введите правильный номер четверти: ");
                numberChetv = Convert.ToInt32(Console.ReadLine());
             }
          }
