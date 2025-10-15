@@ -243,7 +243,7 @@ namespace ArraysAndFunctions
          }
 
          Console.WriteLine("|      Ввод         |     Построение пути         | ");
-         Console.WriteLine("|Точка | Координата |   Точка  - Расстояние       |");
+         Console.WriteLine("|Точка | Координата |   Точка    Расстояние       |");
          index = 0;
          while (index < length)
          {
