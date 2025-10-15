@@ -28,10 +28,10 @@ namespace ArraysAndFunctions
          Console.WriteLine("Таблица кубов чисел от 1 до N");
          Console.WriteLine("-----------------------------");
          Random randomized = new Random();
-         int v = randomized.Next(1, 20);
-         Console.WriteLine("N = " + v);
+         int date = randomized.Next(1, 20);
+         Console.WriteLine("N = " + date);
          int w = 1;
-         while (w <= v)
+         while (w <= date)
          {
 
             string text = "--------+--------\n";
