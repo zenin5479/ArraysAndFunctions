@@ -143,17 +143,17 @@ namespace ArraysAndFunctions
          Console.WriteLine("Вариант 2 с форматом строка");
          Console.WriteLine("---------------------------");
          Console.WriteLine("Введите данные");
-         string num1 = Console.ReadLine();
-         Palindrom(num1);
-         void Palindrom(string num)
+         string palindromeone = Console.ReadLine();
+         Palindrom(palindromeone);
+         void Palindrom(string digits)
          {
-            if (num[0] == num[4] && num[1] == num[3])
+            if (digits[0] == digits[4] && digits[1] == digits[3])
             {
-               Console.WriteLine($"Число {num} является полиндромом");
+               Console.WriteLine($"Число {digits} является полиндромом");
             }
             else
             {
-               Console.WriteLine($"Число {num} не является полиндромом");
+               Console.WriteLine($"Число {digits} не является полиндромом");
             }
          }
 
