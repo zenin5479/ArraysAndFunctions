@@ -161,7 +161,18 @@ namespace ArraysAndFunctions
          Console.WriteLine("Определить оптимальный маршрут торгового представителя, который выезжает из центра координат");
          Console.WriteLine("--------------------------------------------------------------------------------------------");
       found:
-         Console.WriteLine("Введите номер четверти: ");
+
+
+      bool selector = true;
+      while (selector)
+      {
+         
+
+
+         selector = false;
+      }
+      
+      Console.WriteLine("Введите номер четверти: ");
          int numberChetv = Convert.ToInt32(Console.ReadLine());
          // Расчета мультипликатора для задания точек для определенной четверти
          int xMult; int yMult;
