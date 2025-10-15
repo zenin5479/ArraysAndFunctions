@@ -160,42 +160,39 @@ namespace ArraysAndFunctions
          Console.WriteLine("--------------------------------------------------------------------------------------------");
          Console.WriteLine("Определить оптимальный маршрут торгового представителя, который выезжает из центра координат");
          Console.WriteLine("--------------------------------------------------------------------------------------------");
-      found:
 
-
-      bool selector = true;
-      while (selector)
-      {
-         
-
-
-         selector = false;
-      }
-      
-      Console.WriteLine("Введите номер четверти: ");
+         Console.WriteLine("Введите номер четверти: ");
          int numberChetv = Convert.ToInt32(Console.ReadLine());
+         bool selector = true;
          // Расчета мультипликатора для задания точек для определенной четверти
-         int xMult; int yMult;
-         if (numberChetv == 1)
+         int xMult = 0; int yMult = 0;
+         while (selector)
          {
-            xMult = 1; yMult = 1;
-         }
-         else if (numberChetv == 2)
-         {
-            xMult = -1; yMult = 1;
-         }
-         else if (numberChetv == 3)
-         {
-            xMult = -1; yMult = -1;
-         }
-         else if (numberChetv == 4)
-         {
-            xMult = 1; yMult = -1;
-         }
-         else
-         {
-            Console.WriteLine("Введите правильный номер четверти");
-            goto found;
+            if (numberChetv == 1)
+            {
+               xMult = 1; yMult = 1;
+               selector = false;
+            }
+            else if (numberChetv == 2)
+            {
+               xMult = -1; yMult = 1;
+               selector = false;
+            }
+            else if (numberChetv == 3)
+            {
+               xMult = -1; yMult = -1;
+               selector = false;
+            }
+            else if (numberChetv == 4)
+            {
+               xMult = 1; yMult = -1;
+               selector = false;
+            }
+            else
+            {
+               Console.WriteLine("Введите правильный номер четверти");
+               numberChetv = Convert.ToInt32(Console.ReadLine());
+            }
          }
 
          Console.WriteLine("Введите количество точек: ");
