@@ -209,7 +209,7 @@ namespace ArraysAndFunctions
          double[] arrayDistance = new double[numberPoint];
          int length = arrayX.Length;
          // Метод (процедура) Method_FillArray для  заполнения массива случайными заданной четверти
-         void MethodFillArray(int[] array, int mult)                    
+         void MethodFillArray(int[] array, int mult)
          {
             int lengt = array.Length;
             int index1 = 0;
