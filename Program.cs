@@ -203,8 +203,10 @@ namespace ArraysAndFunctions
          int[] arrayY = new int[numberPoint];
          // Инициализация массива всех  точек по х координате
          int[] arrayXInput = new int[numberPoint];
+         // Инициализация массива расстояний от центра до каждой точки
          int[] arrayYInput = new int[numberPoint];
-         double[] arrayDistance = new double[numberPoint];             // инициализация массива расстояний от центра до каждой точки
+
+         double[] arrayDistance = new double[numberPoint];
          int length = arrayX.Length;                                     // кол элементов массива (точек)
          void MethodFillArray(int[] array, int mult)                     // Метод (процедура) Method_FillArray для  заполнения массива случайными заданной четверти
          {
