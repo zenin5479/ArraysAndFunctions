@@ -199,7 +199,8 @@ namespace ArraysAndFunctions
          Random rand = new Random();
          // Инициализация массива всех  точек по х координате
          int[] arrayX = new int[numberPoint];
-         int[] arrayY = new int[numberPoint];                           // инициализация массива всех точек  по Y координате
+         // Инициализация массива всех точек  по Y координате
+         int[] arrayY = new int[numberPoint];
          int[] arrayXInput = new int[numberPoint];                     // инициализация массива всех  точек по х координате
          int[] arrayYInput = new int[numberPoint];
          double[] arrayDistance = new double[numberPoint];             // инициализация массива расстояний от центра до каждой точки
