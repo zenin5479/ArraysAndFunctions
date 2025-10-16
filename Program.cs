@@ -233,8 +233,7 @@ namespace ArraysAndFunctions
          int mx = 0;
          while (mx < length)
          {
-            
-             arrayXInput[mx] = arrayX[mx];
+            arrayXInput[mx] = arrayX[mx];
             arrayYInput[mx] = arrayY[mx];
             mx++;
          }
