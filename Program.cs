@@ -110,19 +110,30 @@ namespace ArraysAndFunctions
             char[] charone = fragment.ToCharArray();
             char[] chartwo = new char[lines];
             int q = lines;
-            for (int p = 0; p < lines; p++)
+            int p = 0;
+            while (p < lines)
             {
                q -= 1;
                chartwo[q] = charone[p];
+               p++;
             }
 
+
             int count = 0;
-            for (int t = 0; t < lines; t++)
+            int t = 0;
+            while (t < lines)
             {
+
                if (chartwo[t] == charone[t])
                {
                   count++;
                }
+               t++;
+            }
+
+            for ()
+            {
+
             }
 
             if (count == lines)
