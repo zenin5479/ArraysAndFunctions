@@ -208,7 +208,7 @@ namespace ArraysAndFunctions
          // Количество элементов массива (точек)
          double[] arrayDistance = new double[numberPoint];
          int length = arrayX.Length;
-         // Метод Method_FillArray для  заполнения массива случайными заданной четверти
+         // Метод MethodFillArray для заполнения массива случайными числами заданной четверти
          void MethodFillArray(int[] array, int mult)
          {
             int lengt = array.Length;
