@@ -104,10 +104,10 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите данные");
          string paragraph = Console.ReadLine();
          // Метод для переворачивания строки
-         void InversionsString(string str1)
+         void InversionsString(string fragment)
          {
-            int lines = str1.Length;
-            char[] str1C = str1.ToCharArray();
+            int lines = fragment.Length;
+            char[] str1C = fragment.ToCharArray();
             char[] str2C = new char[lines];
             int i2 = lines;
             for (int i1 = 0; i1 < lines; i1++)
@@ -127,11 +127,11 @@ namespace ArraysAndFunctions
 
             if (count == lines)
             {
-               Console.WriteLine("Запись: " + str1 + " - является палиндромом");
+               Console.WriteLine("Запись: " + fragment + " - является палиндромом");
             }
             else
             {
-               Console.WriteLine("Запись: " + str1 + " - не является палиндромом");
+               Console.WriteLine("Запись: " + fragment + " - не является палиндромом");
             }
          }
 
