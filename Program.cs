@@ -106,18 +106,18 @@ namespace ArraysAndFunctions
          // Метод для переворачивания строки
          void InversionsString(string str1)
          {
-            int line = str1.Length;
+            int lines = str1.Length;
             char[] str1C = str1.ToCharArray();
-            char[] str2C = new char[line];
-            int i2 = line;
-            for (int i1 = 0; i1 < line; i1++)
+            char[] str2C = new char[lines];
+            int i2 = lines;
+            for (int i1 = 0; i1 < lines; i1++)
             {
                i2 -= 1;
                str2C[i2] = str1C[i1];
             }
 
             int count = 0;
-            for (int i3 = 0; i3 < line; i3++)
+            for (int i3 = 0; i3 < lines; i3++)
             {
                if (str2C[i3] == str1C[i3])
                {
@@ -125,7 +125,7 @@ namespace ArraysAndFunctions
                }
             }
 
-            if (count == line)
+            if (count == lines)
             {
                Console.WriteLine("Запись: " + str1 + " - является палиндромом");
             }
