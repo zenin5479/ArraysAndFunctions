@@ -109,8 +109,8 @@ namespace ArraysAndFunctions
             int lines = fragment.Length;
             char[] charone = fragment.ToCharArray();
             char[] chartwo = new char[lines];
-            int q = lines;
             int p = 0;
+            int q = lines;
             while (p < lines)
             {
                q -= 1;
@@ -118,22 +118,16 @@ namespace ArraysAndFunctions
                p++;
             }
 
-
             int count = 0;
             int t = 0;
             while (t < lines)
             {
-
                if (chartwo[t] == charone[t])
                {
                   count++;
                }
+
                t++;
-            }
-
-            for ()
-            {
-
             }
 
             if (count == lines)
