@@ -220,9 +220,12 @@ namespace ArraysAndFunctions
             }
          }
 
-         MethodFillArray(arrayX, xMult);                                // заполнение массива координатами Х соответствующей четверти
-         MethodFillArray(arrayY, yMult);                                // заполнение массива координатами Y соответствующей четверти
-         for (int mx = 0; mx < length; mx++)                                       // массив для вывода первоначальных значений точек
+         // Заполнение массива координатами Х соответствующей четверти
+         MethodFillArray(arrayX, xMult);
+         // Заполнение массива координатами Y соответствующей четверти
+         MethodFillArray(arrayY, yMult);
+         // Массив для вывода первоначальных значений точек
+         for (int mx = 0; mx < length; mx++)
          {
             arrayXInput[mx] = arrayX[mx];
             arrayYInput[mx] = arrayY[mx];
