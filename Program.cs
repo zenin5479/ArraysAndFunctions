@@ -268,10 +268,9 @@ namespace ArraysAndFunctions
             index++;
          }
 
-         Console.WriteLine("---------------------------------------");
+         Console.WriteLine("--------------------------------------");
          Console.WriteLine("Определение точки пересечения векторов");
-         Console.WriteLine("-------------------------------------------");
-
+         Console.WriteLine("--------------------------------------");
          Random rnd1 = new Random();
          double x11 = rnd1.Next(-5, 5);
          double y11 = rnd1.Next(-5, 5);
