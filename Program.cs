@@ -197,7 +197,8 @@ namespace ArraysAndFunctions
          Console.WriteLine("Введите количество точек: ");
          int numberPoint = Convert.ToInt32(Console.ReadLine());
          Random rand = new Random();
-         int[] arrayX = new int[numberPoint];                           // инициализация массива всех  точек по х координате
+         // Инициализация массива всех  точек по х координате
+         int[] arrayX = new int[numberPoint];
          int[] arrayY = new int[numberPoint];                           // инициализация массива всех точек  по Y координате
          int[] arrayXInput = new int[numberPoint];                     // инициализация массива всех  точек по х координате
          int[] arrayYInput = new int[numberPoint];
