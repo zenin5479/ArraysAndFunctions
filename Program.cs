@@ -110,10 +110,10 @@ namespace ArraysAndFunctions
             char[] charone = fragment.ToCharArray();
             char[] chartwo = new char[lines];
             int q = lines;
-            for (int i1 = 0; i1 < lines; i1++)
+            for (int p = 0; p < lines; p++)
             {
                q -= 1;
-               chartwo[q] = charone[i1];
+               chartwo[q] = charone[p];
             }
 
             int count = 0;
