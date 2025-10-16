@@ -102,7 +102,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Вариант 1 с форматом строка");
          Console.WriteLine("---------------------------");
          Console.WriteLine("Введите данные");
-         string str = Console.ReadLine();
+         string paragraph = Console.ReadLine();
          // Метод для переворачивания строки
          void InversionsString(string str1)
          {
@@ -135,7 +135,7 @@ namespace ArraysAndFunctions
             }
          }
 
-         InversionsString(str);
+         InversionsString(paragraph);
 
          Console.WriteLine("---------------------------------------------");
          Console.WriteLine("Проверка пятизначного числа на палиндромность");
