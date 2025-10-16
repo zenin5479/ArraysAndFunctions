@@ -231,7 +231,7 @@ namespace ArraysAndFunctions
             arrayYInput[mx] = arrayY[mx];
          }
 
-         // заполнение массива расстояние от центра до каждой точки
+         // Заполнение массива расстояний от центра до каждой точки
          int index = 0;
          while (index < length)
          {
@@ -239,7 +239,7 @@ namespace ArraysAndFunctions
             index++;
          }
 
-         // сортировка элоементов массива от иеньшего значения к большему
+         // Сортировка элементов массива от меньшего значения к большему
          for (int i = 0; i < length; i++)
          {
             for (int j = 0; j < length - 1; j++)
