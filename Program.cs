@@ -230,10 +230,13 @@ namespace ArraysAndFunctions
          // Заполнение массива координатами Y соответствующей четверти
          MethodFillArray(arrayY, yMult);
          // Массив для вывода первоначальных значений точек
-         for (int mx = 0; mx < length; mx++)
+         int mx = 0;
+         while (mx < length)
          {
-            arrayXInput[mx] = arrayX[mx];
+            
+             arrayXInput[mx] = arrayX[mx];
             arrayYInput[mx] = arrayY[mx];
+            mx++;
          }
 
          // Заполнение массива расстояний от центра до каждой точки
