@@ -231,14 +231,16 @@ namespace ArraysAndFunctions
             arrayYInput[mx] = arrayY[mx];
          }
 
+         // заполнение массива расстояние от центра до каждой точки
          int index = 0;
-         while (index < length)                                             // заполнение массива расстояние от центра до каждой точки
+         while (index < length)
          {
             arrayDistance[index] = Math.Sqrt(arrayX[index] * arrayX[index] + arrayY[index] * arrayY[index]);
             index++;
          }
 
-         for (int i = 0; i < length; i++)                                       // сортировка элоементов массива от иеньшего значения к большему
+         // сортировка элоементов массива от иеньшего значения к большему
+         for (int i = 0; i < length; i++)
          {
             for (int j = 0; j < length - 1; j++)
             {
