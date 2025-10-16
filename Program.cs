@@ -107,19 +107,19 @@ namespace ArraysAndFunctions
          void InversionsString(string fragment)
          {
             int lines = fragment.Length;
-            char[] str1C = fragment.ToCharArray();
-            char[] str2C = new char[lines];
+            char[] linecharone = fragment.ToCharArray();
+            char[] linechartwo = new char[lines];
             int i2 = lines;
             for (int i1 = 0; i1 < lines; i1++)
             {
                i2 -= 1;
-               str2C[i2] = str1C[i1];
+               linechartwo[i2] = linecharone[i1];
             }
 
             int count = 0;
             for (int i3 = 0; i3 < lines; i3++)
             {
-               if (str2C[i3] == str1C[i3])
+               if (linechartwo[i3] == linecharone[i3])
                {
                   count++;
                }
