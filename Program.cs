@@ -201,7 +201,8 @@ namespace ArraysAndFunctions
          int[] arrayX = new int[numberPoint];
          // Инициализация массива всех точек  по Y координате
          int[] arrayY = new int[numberPoint];
-         int[] arrayXInput = new int[numberPoint];                     // инициализация массива всех  точек по х координате
+         // Инициализация массива всех  точек по х координате
+         int[] arrayXInput = new int[numberPoint];
          int[] arrayYInput = new int[numberPoint];
          double[] arrayDistance = new double[numberPoint];             // инициализация массива расстояний от центра до каждой точки
          int length = arrayX.Length;                                     // кол элементов массива (точек)
