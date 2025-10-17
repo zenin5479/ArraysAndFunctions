@@ -217,11 +217,11 @@ namespace ArraysAndFunctions
          void MethodFillArray(int[] array, int mult)
          {
             int lengt = array.Length;
-            int index1 = 0;
-            while (index1 < lengt)
+            int record = 0;
+            while (record < lengt)
             {
-               array[index1] = mult * rand.Next(1, 10);
-               index1++;
+               array[record] = mult * rand.Next(1, 10);
+               record++;
             }
          }
 
