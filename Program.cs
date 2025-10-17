@@ -284,10 +284,10 @@ namespace ArraysAndFunctions
          Console.WriteLine("Определение точки пересечения векторов");
          Console.WriteLine("--------------------------------------");
          Random randomline = new Random();
-         double x11 = randomline.Next(-5, 5);
-         double y11 = randomline.Next(-5, 5);
-         double x12 = randomline.Next(-5, 5);
-         double y12 = randomline.Next(-5, 5);
+         double xA = randomline.Next(-5, 5);
+         double yA = randomline.Next(-5, 5);
+         double xB = randomline.Next(-5, 5);
+         double yB = randomline.Next(-5, 5);
          double x21 = randomline.Next(-5, 5);
          double y21 = randomline.Next(-5, 5);
          double x22 = randomline.Next(-5, 5);
@@ -296,9 +296,9 @@ namespace ArraysAndFunctions
          double a1, a2, b1, b2, c1, c2;
          double y = 0, x = 0;
 
-         a1 = y11 - y12;
-         b1 = x12 - x11;
-         c1 = x11 * y12 - x12 * y11;
+         a1 = yA - yB;
+         b1 = xB - xA;
+         c1 = xA * yB - xB * yA;
          a2 = y21 - y22;
          b2 = x22 - x21;
          c2 = x21 * y22 - x22 * y21;
@@ -331,8 +331,8 @@ namespace ArraysAndFunctions
             return result;
          }
 
-         Console.WriteLine("AB:  A = [" + x11 + ", " + y11 + "];  " + "B = [" + x12 + ", " + y12 + "];  и   CD:  " + "C = [" + x21 + ", " + y21 + "];  " + "D = [" + x22 + ", " + y22 + "];  ");
-         if (((x >= MethodMin(x11, x12)) & (x <= MethodMax(x11, x12))) & (y >= MethodMin(y11, y12)) & (y <= MethodMax(y11, y12)))
+         Console.WriteLine("AB:  A = [" + xA + ", " + yA + "];  " + "B = [" + xB + ", " + yB + "];  и   CD:  " + "C = [" + x21 + ", " + y21 + "];  " + "D = [" + x22 + ", " + y22 + "];  ");
+         if (((x >= MethodMin(xA, xB)) & (x <= MethodMax(xA, xB))) & (y >= MethodMin(yA, yB)) & (y <= MethodMax(yA, yB)))
          {
             Console.WriteLine("Есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
             if (x > 0 & y > 0)
