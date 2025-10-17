@@ -33,7 +33,6 @@ namespace ArraysAndFunctions
          int w = 1;
          while (w <= date)
          {
-
             string text = "--------+--------\n";
             text = text + "|  " + w + "\t|  " + w * w * w + "\t|";
             Console.WriteLine(text);
