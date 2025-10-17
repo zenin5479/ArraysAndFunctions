@@ -290,7 +290,7 @@ namespace ArraysAndFunctions
          double yB = randomline.Next(-5, 5);
          double xC = randomline.Next(-5, 5);
          double yC = randomline.Next(-5, 5);
-         double x22 = randomline.Next(-5, 5);
+         double xD = randomline.Next(-5, 5);
          double y22 = randomline.Next(-5, 5);
 
          double a1, a2, b1, b2, c1, c2;
@@ -300,8 +300,8 @@ namespace ArraysAndFunctions
          b1 = xB - xA;
          c1 = xA * yB - xB * yA;
          a2 = yC - y22;
-         b2 = x22 - xC;
-         c2 = xC * y22 - x22 * yC;
+         b2 = xD - xC;
+         c2 = xC * y22 - xD * yC;
 
          if ((b1 * a2 - b2 * a1) != 0)
          {
@@ -331,7 +331,7 @@ namespace ArraysAndFunctions
             return result;
          }
 
-         Console.WriteLine("AB:  A = [" + xA + ", " + yA + "];  " + "B = [" + xB + ", " + yB + "];  и   CD:  " + "C = [" + xC + ", " + yC + "];  " + "D = [" + x22 + ", " + y22 + "];  ");
+         Console.WriteLine("AB:  A = [" + xA + ", " + yA + "];  " + "B = [" + xB + ", " + yB + "];  и   CD:  " + "C = [" + xC + ", " + yC + "];  " + "D = [" + xD + ", " + y22 + "];  ");
          if (((x >= MethodMin(xA, xB)) & (x <= MethodMax(xA, xB))) & (y >= MethodMin(yA, yB)) & (y <= MethodMax(yA, yB)))
          {
             Console.WriteLine("Есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
