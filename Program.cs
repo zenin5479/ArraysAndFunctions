@@ -30,13 +30,13 @@ namespace ArraysAndFunctions
          Random randomized = new Random();
          int date = randomized.Next(1, 20);
          Console.WriteLine("N = " + date);
-         int w = 1;
-         while (w <= date)
+         int countcub = 1;
+         while (countcub <= date)
          {
             string text = "--------+--------\n";
-            text = text + "|  " + w + "\t|  " + w * w * w + "\t|"; //
+            text = text + "|  " + countcub + "\t|  " + countcub * countcub * countcub + "\t|";
             Console.WriteLine(text);
-            w++;
+            countcub++;
          }
 
          Console.WriteLine("-----------------------------------------------------------");
@@ -272,7 +272,7 @@ namespace ArraysAndFunctions
          }
 
          Console.WriteLine("|      Ввод         |     Построение пути         | ");
-         Console.WriteLine("|Точка | Координата |   Точка    Расстояние       |");
+         Console.WriteLine("|Точка | Координата |   Точка    Расстояние       |"); //
          register = 0;
          while (register < distance)
          {
@@ -333,7 +333,8 @@ namespace ArraysAndFunctions
             return score;
          }
 
-         Console.WriteLine("AB:  A = [" + xA + ", " + yA + "];  " + "B = [" + xB + ", " + yB + "];  и   CD:  " + "C = [" + xC + ", " + yC + "];  " + "D = [" + xD + ", " + yD + "];  ");
+         Console.WriteLine("AB:  A = [" + xA + ", " + yA + "];  " + "B = [" + xB + ", " + yB + "];  и   CD:  " +
+                           "C = [" + xC + ", " + yC + "];  " + "D = [" + xD + ", " + yD + "];  ");
          if (x >= MethodMin(xA, xB) & x <= MethodMax(xA, xB) & y >= MethodMin(yA, yB) & y <= MethodMax(yA, yB))
          {
             Console.WriteLine("Есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
