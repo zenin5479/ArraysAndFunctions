@@ -293,20 +293,20 @@ namespace ArraysAndFunctions
          double xD = randomline.Next(-10, 10);
          double yD = randomline.Next(-10, 10);
 
-         double ax, ay, bx, by, c1, c2;
+         double ax, ay, bx, by, cx, cy;
          double y = 0, x = 0;
 
          ax = yA - yB;
          bx = xB - xA;
-         c1 = xA * yB - xB * yA;
+         cx = xA * yB - xB * yA;
          ay = yC - yD;
          by = xD - xC;
-         c2 = xC * yD - xD * yC;
+         cy = xC * yD - xD * yC;
 
          if ((bx * ay - by * ax) != 0)
          {
-            y = (c2 * ax - c1 * ay) / (bx * ay - by * ax);
-            x = (-c1 - bx * y) / ax;
+            y = (cy * ax - cx * ay) / (bx * ay - by * ax);
+            x = (-cx - bx * y) / ax;
          }
 
          double MethodMax(double arg1, double arg2)     // Метод  определения максимального числа из двух
