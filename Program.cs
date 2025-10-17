@@ -229,12 +229,12 @@ namespace ArraysAndFunctions
          // Заполнение массива координатами Y соответствующей четверти
          MethodFillArray(arrayY, yMult);
          // Массив для вывода первоначальных значений точек
-         int mx = 0;
-         while (mx < distance)
+         int rx = 0;
+         while (rx < distance)
          {
-            arrayXInput[mx] = arrayX[mx];
-            arrayYInput[mx] = arrayY[mx];
-            mx++;
+            arrayXInput[rx] = arrayX[rx];
+            arrayYInput[rx] = arrayY[rx];
+            rx++;
          }
 
          // Заполнение массива расстояний от центра до каждой точки
