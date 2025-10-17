@@ -212,7 +212,7 @@ namespace ArraysAndFunctions
          int[] arrayYInput = new int[numberPoint];
          // Количество элементов массива (точек)
          double[] arrayDistance = new double[numberPoint];
-         int length = arrayX.Length;
+         int distance = arrayX.Length;
          // Метод MethodFillArray для заполнения массива случайными числами заданной четверти
          void MethodFillArray(int[] array, int mult)
          {
@@ -231,7 +231,7 @@ namespace ArraysAndFunctions
          MethodFillArray(arrayY, yMult);
          // Массив для вывода первоначальных значений точек
          int mx = 0;
-         while (mx < length)
+         while (mx < distance)
          {
             arrayXInput[mx] = arrayX[mx];
             arrayYInput[mx] = arrayY[mx];
@@ -240,16 +240,16 @@ namespace ArraysAndFunctions
 
          // Заполнение массива расстояний от центра до каждой точки
          int index = 0;
-         while (index < length)
+         while (index < distance)
          {
             arrayDistance[index] = Math.Sqrt(arrayX[index] * arrayX[index] + arrayY[index] * arrayY[index]);
             index++;
          }
 
          // Сортировка элементов массива от меньшего значения к большему
-         for (int i = 0; i < length; i++)
+         for (int i = 0; i < distance; i++)
          {
-            for (int j = 0; j < length - 1; j++)
+            for (int j = 0; j < distance - 1; j++)
             {
                if (arrayDistance[j] > arrayDistance[j + 1])
                {
@@ -269,7 +269,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("|      Ввод         |     Построение пути         | ");
          Console.WriteLine("|Точка | Координата |   Точка    Расстояние       |");
          index = 0;
-         while (index < length)
+         while (index < distance)
          {
             Console.WriteLine("|   " + index + "  |  [" + arrayXInput[index] + "; " + arrayYInput[index] + "]   " + "|  [" + arrayX[index] + "; " + arrayY[index] + "]" + " = " + arrayDistance[index] + "|");
             index++;
