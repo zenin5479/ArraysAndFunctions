@@ -265,19 +265,8 @@ namespace ArraysAndFunctions
                   arrayY[j] = tY;
                }
 
-
-
                j++;
             }
-
-
-
-            for ( )
-            {
-
-            }
-
-
 
             i++;
          }
