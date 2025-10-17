@@ -246,8 +246,12 @@ namespace ArraysAndFunctions
          }
 
          // Сортировка элементов массива от меньшего значения к большему
-         for (int i = 0; i < distance; i++)
+
+         int i = 0;
+         while (i < distance)
          {
+
+
             for (int j = 0; j < distance - 1; j++)
             {
                if (arrayDistance[j] > arrayDistance[j + 1])
@@ -263,6 +267,10 @@ namespace ArraysAndFunctions
                   arrayY[j] = tY;
                }
             }
+
+
+
+            i++;
          }
 
          Console.WriteLine("|      Ввод         |     Построение пути         | ");
