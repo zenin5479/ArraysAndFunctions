@@ -276,7 +276,16 @@ namespace ArraysAndFunctions
          register = 0;
          while (register < distance)
          {
-            Console.WriteLine("|   " + register + "  |  [" + arrayXInput[register] + "; " + arrayYInput[register] + "]   " + "|  [" + arrayX[register] + "; " + arrayY[register] + "]" + " = " + arrayDistance[register] + "|");
+            Console.WriteLine("|   " + register + "  |  [" + arrayXInput[register] + "; " + arrayYInput[register] +
+                              "]   " + "|  [" + arrayX[register] + "; " + arrayY[register] + "]" + " = " +
+                              arrayDistance[register] + "|");
+
+            //
+            //double number2 = 45.08;
+            //string result2 = string.Format("{0:f4}", number2);
+            //Console.WriteLine(result2); // 45,0800
+            //
+
             register++;
          }
 
