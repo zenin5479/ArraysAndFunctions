@@ -293,20 +293,20 @@ namespace ArraysAndFunctions
          double xD = randomline.Next(-10, 10);
          double yD = randomline.Next(-10, 10);
 
-         double a1, a2, b1, b2, c1, c2;
+         double ax, ay, bx, by, c1, c2;
          double y = 0, x = 0;
 
-         a1 = yA - yB;
-         b1 = xB - xA;
+         ax = yA - yB;
+         bx = xB - xA;
          c1 = xA * yB - xB * yA;
-         a2 = yC - yD;
-         b2 = xD - xC;
+         ay = yC - yD;
+         by = xD - xC;
          c2 = xC * yD - xD * yC;
 
-         if ((b1 * a2 - b2 * a1) != 0)
+         if ((bx * ay - by * ax) != 0)
          {
-            y = (c2 * a1 - c1 * a2) / (b1 * a2 - b2 * a1);
-            x = (-c1 - b1 * y) / a1;
+            y = (c2 * ax - c1 * ay) / (bx * ay - by * ax);
+            x = (-c1 - bx * y) / ax;
          }
 
          double MethodMax(double arg1, double arg2)     // Метод  определения максимального числа из двух
@@ -352,7 +352,7 @@ namespace ArraysAndFunctions
          {
             Console.WriteLine("Точки пересечения нет");
          }
-         if (b1 * a2 - b2 * a1 == 0)
+         if (bx * ay - by * ax == 0)
          {
             Console.WriteLine("Отрезки параллельны");
          }
