@@ -200,7 +200,7 @@ namespace ArraysAndFunctions
 
          Console.WriteLine("Введите количество точек: ");
          int numberPoint = Convert.ToInt32(Console.ReadLine());
-         Random rand = new Random();
+         Random randPoint = new Random();
          // Инициализация массива всех точек по х координате
          int[] arrayX = new int[numberPoint];
          // Инициализация массива всех точек по Y координате
@@ -219,7 +219,7 @@ namespace ArraysAndFunctions
             int record = 0;
             while (record < size)
             {
-               array[record] = mult * rand.Next(1, 10);
+               array[record] = mult * randPoint.Next(1, 10);
                record++;
             }
          }
