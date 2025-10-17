@@ -284,7 +284,7 @@ namespace ArraysAndFunctions
          Console.WriteLine("Определение точки пересечения векторов");
          Console.WriteLine("--------------------------------------");
          Random randomline = new Random();
-         double xA = randomline.Next(-5, 5);
+         double xA = randomline.Next(-10, 10);
          double yA = randomline.Next(-5, 5);
          double xB = randomline.Next(-5, 5);
          double yB = randomline.Next(-5, 5);
