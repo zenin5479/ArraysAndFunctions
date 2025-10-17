@@ -246,13 +246,11 @@ namespace ArraysAndFunctions
          }
 
          // Сортировка элементов массива от меньшего значения к большему
-
          int i = 0;
          while (i < distance)
          {
-
-
-            for (int j = 0; j < distance - 1; j++)
+            int j = 0;
+            while (j < distance - 1)
             {
                if (arrayDistance[j] > arrayDistance[j + 1])
                {
@@ -266,6 +264,17 @@ namespace ArraysAndFunctions
                   arrayX[j] = tX;
                   arrayY[j] = tY;
                }
+
+
+
+               j++;
+            }
+
+
+
+            for ( )
+            {
+
             }
 
 
