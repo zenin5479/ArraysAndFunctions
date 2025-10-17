@@ -285,13 +285,13 @@ namespace ArraysAndFunctions
          Console.WriteLine("--------------------------------------");
          Random randomline = new Random();
          double xA = randomline.Next(-10, 10);
-         double yA = randomline.Next(-5, 5);
-         double xB = randomline.Next(-5, 5);
-         double yB = randomline.Next(-5, 5);
-         double xC = randomline.Next(-5, 5);
-         double yC = randomline.Next(-5, 5);
-         double xD = randomline.Next(-5, 5);
-         double yD = randomline.Next(-5, 5);
+         double yA = randomline.Next(-10, 10);
+         double xB = randomline.Next(-10, 10);
+         double yB = randomline.Next(-10, 10);
+         double xC = randomline.Next(-10, 10);
+         double yC = randomline.Next(-10, 10);
+         double xD = randomline.Next(-10, 10);
+         double yD = randomline.Next(-10, 10);
 
          double a1, a2, b1, b2, c1, c2;
          double y = 0, x = 0;
