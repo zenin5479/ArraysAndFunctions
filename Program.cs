@@ -320,15 +320,15 @@ namespace ArraysAndFunctions
             return result;
          }
 
-         double MethodMin(double arg1, double arg2)     // Метод определения минимального числа из двух
+         double MethodMin(double proofone, double prooftwo)     // Метод определения минимального числа из двух
          {
-            double result = arg1;
-            if (arg2 < result)
+            double score = proofone;
+            if (prooftwo < score)
             {
-               result = arg2;
+               score = prooftwo;
             }
 
-            return result;
+            return score;
          }
 
          Console.WriteLine("AB:  A = [" + xA + ", " + yA + "];  " + "B = [" + xB + ", " + yB + "];  и   CD:  " + "C = [" + xC + ", " + yC + "];  " + "D = [" + xD + ", " + yD + "];  ");
