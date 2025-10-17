@@ -309,7 +309,8 @@ namespace ArraysAndFunctions
             x = (-cx - bx * y) / ax;
          }
 
-         double MethodMax(double caseone, double casetwo)     // Метод  определения максимального числа из двух
+         // Метод  определения максимального числа из двух
+         double MethodMax(double caseone, double casetwo)     
          {
             double result = caseone;
             if (casetwo > result)
@@ -320,7 +321,8 @@ namespace ArraysAndFunctions
             return result;
          }
 
-         double MethodMin(double proofone, double prooftwo)     // Метод определения минимального числа из двух
+         // Метод определения минимального числа из двух
+         double MethodMin(double proofone, double prooftwo)     
          {
             double score = proofone;
             if (prooftwo < score)
