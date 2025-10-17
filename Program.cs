@@ -238,11 +238,11 @@ namespace ArraysAndFunctions
          }
 
          // Заполнение массива расстояний от центра до каждой точки
-         int index = 0;
-         while (index < distance)
+         int register = 0;
+         while (register < distance)
          {
-            arrayDistance[index] = Math.Sqrt(arrayX[index] * arrayX[index] + arrayY[index] * arrayY[index]);
-            index++;
+            arrayDistance[register] = Math.Sqrt(arrayX[register] * arrayX[register] + arrayY[register] * arrayY[register]);
+            register++;
          }
 
          // Сортировка элементов массива от меньшего значения к большему
@@ -267,11 +267,11 @@ namespace ArraysAndFunctions
 
          Console.WriteLine("|      Ввод         |     Построение пути         | ");
          Console.WriteLine("|Точка | Координата |   Точка    Расстояние       |");
-         index = 0;
-         while (index < distance)
+         register = 0;
+         while (register < distance)
          {
-            Console.WriteLine("|   " + index + "  |  [" + arrayXInput[index] + "; " + arrayYInput[index] + "]   " + "|  [" + arrayX[index] + "; " + arrayY[index] + "]" + " = " + arrayDistance[index] + "|");
-            index++;
+            Console.WriteLine("|   " + register + "  |  [" + arrayXInput[register] + "; " + arrayYInput[register] + "]   " + "|  [" + arrayX[register] + "; " + arrayY[register] + "]" + " = " + arrayDistance[register] + "|");
+            register++;
          }
 
          Console.WriteLine("--------------------------------------");
