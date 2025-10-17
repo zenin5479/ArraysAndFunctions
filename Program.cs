@@ -34,7 +34,7 @@ namespace ArraysAndFunctions
          while (w <= date)
          {
             string text = "--------+--------\n";
-            text = text + "|  " + w + "\t|  " + w * w * w + "\t|";
+            text = text + "|  " + w + "\t|  " + w * w * w + "\t|"; //
             Console.WriteLine(text);
             w++;
          }
@@ -215,9 +215,9 @@ namespace ArraysAndFunctions
          // Метод MethodFillArray для заполнения массива случайными числами заданной четверти
          void MethodFillArray(int[] array, int mult)
          {
-            int lengt = array.Length;
+            int size = array.Length;
             int record = 0;
-            while (record < lengt)
+            while (record < size)
             {
                array[record] = mult * rand.Next(1, 10);
                record++;
