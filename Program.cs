@@ -309,12 +309,12 @@ namespace ArraysAndFunctions
             x = (-cx - bx * y) / ax;
          }
 
-         double MethodMax(double caseone, double case2)     // Метод  определения максимального числа из двух
+         double MethodMax(double caseone, double casetwo)     // Метод  определения максимального числа из двух
          {
             double result = caseone;
-            if (case2 > result)
+            if (casetwo > result)
             {
-               result = case2;
+               result = casetwo;
             }
 
             return result;
