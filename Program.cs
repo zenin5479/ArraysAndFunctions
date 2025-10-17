@@ -283,15 +283,15 @@ namespace ArraysAndFunctions
          Console.WriteLine("--------------------------------------");
          Console.WriteLine("Определение точки пересечения векторов");
          Console.WriteLine("--------------------------------------");
-         Random rnd1 = new Random();
-         double x11 = rnd1.Next(-5, 5);
-         double y11 = rnd1.Next(-5, 5);
-         double x12 = rnd1.Next(-5, 5);
-         double y12 = rnd1.Next(-5, 5);
-         double x21 = rnd1.Next(-5, 5);
-         double y21 = rnd1.Next(-5, 5);
-         double x22 = rnd1.Next(-5, 5);
-         double y22 = rnd1.Next(-5, 5);
+         Random randomline = new Random();
+         double x11 = randomline.Next(-5, 5);
+         double y11 = randomline.Next(-5, 5);
+         double x12 = randomline.Next(-5, 5);
+         double y12 = randomline.Next(-5, 5);
+         double x21 = randomline.Next(-5, 5);
+         double y21 = randomline.Next(-5, 5);
+         double x22 = randomline.Next(-5, 5);
+         double y22 = randomline.Next(-5, 5);
 
          double a1, a2, b1, b2, c1, c2;
          double y = 0, x = 0;
