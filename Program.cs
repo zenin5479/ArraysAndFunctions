@@ -332,7 +332,7 @@ namespace ArraysAndFunctions
          }
 
          Console.WriteLine("AB:  A = [" + xA + ", " + yA + "];  " + "B = [" + xB + ", " + yB + "];  и   CD:  " + "C = [" + xC + ", " + yC + "];  " + "D = [" + xD + ", " + yD + "];  ");
-         if (((x >= MethodMin(xA, xB)) & (x <= MethodMax(xA, xB))) & (y >= MethodMin(yA, yB)) & (y <= MethodMax(yA, yB)))
+         if (x >= MethodMin(xA, xB) & x <= MethodMax(xA, xB) & y >= MethodMin(yA, yB) & y <= MethodMax(yA, yB))
          {
             Console.WriteLine("Есть точка пересечения:  [x =" + x + ";  y=" + y + "]");
             if (x > 0 & y > 0)
