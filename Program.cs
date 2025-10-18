@@ -311,7 +311,6 @@ namespace ArraysAndFunctions
 
          double ax, ay, bx, by, cx, cy;
          double y = 0, x = 0;
-
          ax = yA - yB;
          bx = xB - xA;
          cx = xA * yB - xB * yA;
