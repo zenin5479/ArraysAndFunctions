@@ -278,9 +278,12 @@ namespace ArraysAndFunctions
 
          while (register < distance)
          {
-            string res1 = string.Format("{0:f4}", arrayDistance[register]); // 4 знака
-            //string res1 = arrayDistance[register].ToString("F4"); // 4 знака
-            //string res1 = arrayDistance[register].ToString("N4"); // 3 знака + разделители
+            // 4 знака
+            string res1 = string.Format("{0:f4}", arrayDistance[register]);
+            // 4 знака
+            //string res1 = arrayDistance[register].ToString("F4");
+            // 3 знака + разделители
+            //string res1 = arrayDistance[register].ToString("N4"); 
             Console.WriteLine("|  " + register + "\t|  [" + arrayXInput[register] + "; " + arrayYInput[register] +
                               "]   " + "\t|  [" + arrayX[register] + "; " + arrayY[register] + "]" + " = " + res1 + "\t|");
             register++;
