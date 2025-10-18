@@ -281,9 +281,9 @@ namespace ArraysAndFunctions
             // 4 знака
             //string score = string.Format("{0:f4}", arrayDistance[register]);
             // 4 знака
-            string score = arrayDistance[register].ToString("F4");
+            //string score = arrayDistance[register].ToString("F4");
             // 3 знака + разделители
-            //string res1 = arrayDistance[register].ToString("N4"); 
+            string score = arrayDistance[register].ToString("N4");
             Console.WriteLine("|  " + register + "\t|  [" + arrayXInput[register] + "; " + arrayYInput[register] +
                               "]   " + "\t|  [" + arrayX[register] + "; " + arrayY[register] + "]" + " = " + score + "\t|");
             register++;
