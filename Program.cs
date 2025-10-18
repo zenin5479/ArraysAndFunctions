@@ -271,8 +271,8 @@ namespace ArraysAndFunctions
             i++;
          }
 
-         Console.WriteLine("|\tВвод\t\t|\tПостроение пути\t| ");
-         Console.WriteLine("|Точка\t| Координата\t|   Точка    Расстояние\t|"); //
+         Console.WriteLine("|        Ввод\t\t|    Построение пути\t| ");
+         Console.WriteLine("| Точка\t|  Координата\t| Точка    Расстояние\t|"); //
 
          register = 0;
 
