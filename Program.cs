@@ -271,8 +271,8 @@ namespace ArraysAndFunctions
             i++;
          }
 
-         Console.WriteLine("|      Ввод         |     Построение пути         | ");
-         Console.WriteLine("|Точка | Координата |   Точка    Расстояние       |"); //
+         Console.WriteLine("|      Ввод         |     Построение пути        | ");
+         Console.WriteLine("|Точка | Координата |   Точка    Расстояние      |"); //
 
          register = 0;
 
@@ -282,7 +282,7 @@ namespace ArraysAndFunctions
             //string res1 = arrayDistance[register].ToString("F2"); // 2 знака
             string res1 = arrayDistance[register].ToString("N3"); // 3 знака + разделители
             Console.WriteLine("|   " + register + "  |  [" + arrayXInput[register] + "; " + arrayYInput[register] +
-                              "]   " + "|  [" + arrayX[register] + "; " + arrayY[register] + "]" + " = " + res1 + "|");
+                              "]   " + "|  [" + arrayX[register] + "; " + arrayY[register] + "]" + " = " + res1 + "\t|");
 
             //
             //double number2 = 45.08;
