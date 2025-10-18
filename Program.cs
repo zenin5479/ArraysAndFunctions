@@ -277,20 +277,24 @@ namespace ArraysAndFunctions
 
 
          register = 0;
+         string res1 = string.Format("{0:f4}", arrayDistance[register]); // 4 знака
+         string res2 = arrayDistance[register].ToString("F2"); // 2 знака
+         string res3 = arrayDistance[register].ToString("N3"); // 3 знака + разделители
+
          while (register < distance)
          {
             Console.WriteLine("|   " + register + "  |  [" + arrayXInput[register] + "; " + arrayYInput[register] +
                               "]   " + "|  [" + arrayX[register] + "; " + arrayY[register] + "]" + " = " +
-                              arrayDistance[register] + "|");
+                              res1 + "|");
 
 
 
             //
             //double number2 = 45.08;
-            string result2 = string.Format("{0:f4}", register);
-            Console.WriteLine(result2); // 45,0800
-            string result3 = register.ToString("F2"); // "123.46" (2 знака)
-            string result4 = register.ToString("N3");// "123.456" (3 знака + разделители)
+            //string result2 = string.Format("{0:f4}", register);
+            //Console.WriteLine(result2); // 45,0800
+            //string result3 = register.ToString("F2"); // "123.46" (2 знака)
+            //string result4 = register.ToString("N3");// "123.456" (3 знака + разделители)
             //
 
             register++;
