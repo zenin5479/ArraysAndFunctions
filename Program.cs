@@ -291,7 +291,6 @@ namespace ArraysAndFunctions
             Console.WriteLine(result2); // 45,0800
             string result3 = register.ToString("F2"); // "123.46" (2 знака)
             string result4 = register.ToString("N3");// "123.456" (3 знака + разделители)
-
             //
 
             register++;
