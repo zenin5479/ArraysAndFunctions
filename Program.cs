@@ -273,6 +273,9 @@ namespace ArraysAndFunctions
 
          Console.WriteLine("|      Ввод         |     Построение пути         | ");
          Console.WriteLine("|Точка | Координата |   Точка    Расстояние       |"); //
+
+
+
          register = 0;
          while (register < distance)
          {
@@ -284,6 +287,9 @@ namespace ArraysAndFunctions
             //double number2 = 45.08;
             //string result2 = string.Format("{0:f4}", number2);
             //Console.WriteLine(result2); // 45,0800
+            //string ро = register.ToString("F2"); // "123.46" (2 знака)
+            //         ро = register.ToString("N3"); // "123.456" (3 знака + разделители)
+
             //
 
             register++;
@@ -319,7 +325,7 @@ namespace ArraysAndFunctions
          }
 
          // Метод  определения максимального числа из двух
-         double MethodMax(double caseone, double casetwo)     
+         double MethodMax(double caseone, double casetwo)
          {
             double result = caseone;
             if (casetwo > result)
@@ -331,7 +337,7 @@ namespace ArraysAndFunctions
          }
 
          // Метод определения минимального числа из двух
-         double MethodMin(double proofone, double prooftwo)     
+         double MethodMin(double proofone, double prooftwo)
          {
             double score = proofone;
             if (prooftwo < score)
