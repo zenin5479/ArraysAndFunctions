@@ -279,11 +279,11 @@ namespace ArraysAndFunctions
          while (register < distance)
          {
             // 4 знака
-            //string score = string.Format("{0:f4}", arrayDistance[register]);
+            string score = string.Format("{0:f4}", arrayDistance[register]);
             // 4 знака
             //string score = arrayDistance[register].ToString("F4");
-            // 3 знака + разделители
-            string score = arrayDistance[register].ToString("N4");
+            // 4 знака + разделители
+            //string score = arrayDistance[register].ToString("N4");
             Console.WriteLine("|  " + register + "\t|  [" + arrayXInput[register] + "; " + arrayYInput[register] +
                               "]   " + "\t|  [" + arrayX[register] + "; " + arrayY[register] + "]" + " = " + score + "\t|");
             register++;
