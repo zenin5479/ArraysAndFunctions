@@ -15,11 +15,11 @@ namespace ArraysAndFunctions
 {
    internal class Program
    {
-      static void Main(string[] args)
+      static void Main()
       {
-         Console.WriteLine("------------------");
-         Console.WriteLine("Перевёрнутое число");
-         Console.WriteLine("------------------");
+         Console.WriteLine("---------------------------------------------------------------------------------------");
+         Console.WriteLine("Программа, которая принимает на вход целое число и на выходе выводит перевёрнутое число");
+         Console.WriteLine("---------------------------------------------------------------------------------------");
          Console.Write("Введите целое число: ");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод для переворачивания целого числа
@@ -27,7 +27,7 @@ namespace ArraysAndFunctions
          {
             int i = numberone;
             if (i < 0) numberone = -1 * numberone;
-            int numbertwo = 0;
+            int number2 = 0;
             while (numberone > 0)
             {
                // Находим остаток - последнюю цифру исходного числа
@@ -35,19 +35,19 @@ namespace ArraysAndFunctions
                // Удаляем последнюю цифру исходного числа (уменьшаем разрядность)
                numberone /= 10;
                // Формируем новое  второе число (увеличиваем разрядность)
-               numbertwo *= 10;
+               number2 *= 10;
                // Добавляем цифру в разряд втрого числа
-               numbertwo += digit;
+               number2 += digit;
             }
-            if (i < 0) return -1 * numbertwo;
-            return numbertwo;
+            if (i < 0) return -1 * number2;
+            return number2;
          }
 
          Console.WriteLine("Числу: " + number + " соответствует перевернутое число: " + Perenert(number));
 
-         Console.WriteLine("------------------------------");
-         Console.WriteLine("Проверка наличия цыфры в числе");
-         Console.WriteLine("------------------------------");
+         Console.WriteLine("---------------------------------------------------------------------------------");
+         Console.WriteLine("Программа, которая выводит заданную цифру числа или сообщает, что такой цифры нет");
+         Console.WriteLine("---------------------------------------------------------------------------------");
          Console.Write("Введите целое число: ");
          int item = Convert.ToInt32(Console.ReadLine());
          if (item == 0)
@@ -55,8 +55,8 @@ namespace ArraysAndFunctions
             while (item == 0)
             {
                Console.Write("Введите целое число отличнное от 0: ");
-               int itemone = Convert.ToInt32(Console.ReadLine());
-               item = itemone;
+               int number2 = Convert.ToInt32(Console.ReadLine());
+               item = number2;
             }
          }
 
@@ -76,7 +76,7 @@ namespace ArraysAndFunctions
 
             int[] array = new int[digitone];
             // Метод переворачивает число
-            int numB = Math.Abs(Inversions(itemone));
+            int numB = Math.Abs(Perenert(itemone));
             int s = numB;
             int digittwo = 0;
             // Число переводится в массив
@@ -100,10 +100,10 @@ namespace ArraysAndFunctions
          }
          Fun(item);
 
-         Console.WriteLine("-------------------");
-         Console.WriteLine("Проверка дня недели");
-         Console.WriteLine("-------------------");
-         Console.Write("Введите порядковый номер дня недели от 1 до 7: ");
+         Console.WriteLine("-----------------------------------------------------------------------------------------------------------------");
+         Console.WriteLine("Программа, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным");
+         Console.WriteLine("-----------------------------------------------------------------------------------------------------------------");
+         Console.Write("Введите порядковый номер недели от 1 до 7: ");
          int issue = Convert.ToInt32(Console.ReadLine());
          string ss;
          // Метод определения является день недели ли выходным или нет
@@ -173,9 +173,10 @@ namespace ArraysAndFunctions
 
          Console.WriteLine(issue + " - " + Week(issue) + Weekend(issue));
 
-         Console.WriteLine("-----------------------------------------------------------");
-         Console.WriteLine("Проверка равнобедренности треугольника со сторонами a, b, c");
-         Console.WriteLine("-----------------------------------------------------------");
+         // Дополнительные задачи
+         Console.WriteLine("------------------------------------------------------------------------------------------");
+         Console.WriteLine("Программа, которая определяет, является ли треугольник со сторонами a, b, c равнобедренным");
+         Console.WriteLine("------------------------------------------------------------------------------------------");
          Console.Write("Введите сторону a треугольника: ");
          int a = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите сторону b треугольника: ");
@@ -197,9 +198,9 @@ namespace ArraysAndFunctions
 
          Isosceles(a, b, c);
 
-         Console.WriteLine("-----------------------------");
-         Console.WriteLine("Определение возраста человека");
-         Console.WriteLine("-----------------------------");
+         Console.WriteLine("---------------------------------------------------------");
+         Console.WriteLine("Определить возраст человека");
+         Console.WriteLine("---------------------------------------------------------");
          // Метод проверки правильности ввода месяца
          int InputMonth(int month)
          {
@@ -208,7 +209,6 @@ namespace ArraysAndFunctions
                Console.WriteLine("Введите корректный месяц: ");
                month = Convert.ToInt32(Console.ReadLine());
             }
-
             return month;
          }
 
@@ -220,7 +220,6 @@ namespace ArraysAndFunctions
                Console.WriteLine("Введите корректную дату: ");
                day = Convert.ToInt32(Console.ReadLine());
             }
-
             return day;
          }
 
@@ -249,25 +248,18 @@ namespace ArraysAndFunctions
          {
             int age = 0;
             if (yeartoday > yearbirth)
-            {
                if ((monthtoday < monthbirth) & (daytoday < daybirth))
-               {
                   age = yeartoday - yearbirth - 1;
-               }
                else
-               {
                   age = yeartoday - yearbirth;
-               }
-            }
-
             Console.WriteLine("Возраст (количество полных лет) = " + age);
          }
 
          InputAge(yearone, yeartwo, monthone, monthtwo, dayone, daytwo);
 
-         Console.WriteLine("--------------------------------------------");
-         Console.WriteLine("Определение размера депозита через N месяцев");
-         Console.WriteLine("--------------------------------------------");
+         Console.WriteLine("------------------------------------------");
+         Console.WriteLine("Определить размер депозита через n месяцев");
+         Console.WriteLine(" -----------------------------------------");
          Console.Write("Введите количество месяцев: ");
          int period = Convert.ToInt32(Console.ReadLine());
          double deposit = 1000;
@@ -289,9 +281,8 @@ namespace ArraysAndFunctions
 
          DepositPercent(deposit, period);
 
-         Console.WriteLine("------------------------------------------------------------------------------------------------");
-         Console.WriteLine("Определение расположения максимальной и минимальной цифр в натуральном числе с разными цифрами: ");
-         Console.WriteLine("------------------------------------------------------------------------------------------------");
+         // Доп задача: Дано натуральное число, в котором все цифры различны
+         // Определить, какая цифра расположена в нем левее: максимальная или минимальная
          Console.Write("Введите натуральное число с разными цифрами: ");
          int naturalnumber;
          bool flag = int.TryParse(Console.ReadLine(), out naturalnumber);
