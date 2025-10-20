@@ -76,7 +76,7 @@ namespace ArraysAndFunctions
 
             int[] array = new int[digitone];
             // Метод переворачивает число
-            int numB = Math.Abs(Inversions(itemone));
+            int numB = Math.Abs(Perenert(itemone));
             int s = numB;
             int digittwo = 0;
             // Число переводится в массив
